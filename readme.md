@@ -2,7 +2,7 @@
 
 1. For Designers: 
    - Place raw SVGs in the `icons/` folder.  
-   - Use simple file names (e.g., `search.svg`, `home.svg`).
+   - Use simple file names (e.g., `search.svg`, `home.svg`, `send-horizontal.svg`).
    - Add icons in 24x24 so that consistency is maintained
    - Add 4px padding within the viewBox, so that consistency is maintained. ex icons within viewBox: 20x20, 15x20, 20x14
    - All icons should be monochrome and black
