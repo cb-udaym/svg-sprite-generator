@@ -6,19 +6,24 @@
   <title>Icon Gallery - CB Web</title>
   <style>
     body { font-family: system-ui, sans-serif; margin: 24px; background-color: #f7f7f7;}
-    header { display:flex; gap:12px; align-items:center; flex-wrap:wrap; }
+    header { display:flex; gap:12px; align-items:center; flex-wrap:wrap; justify-content: space-between; }
     input { padding:10px 12px; border:1px solid #ddd; border-radius:10px; min-width:100%; }
     h2 { margin:24px 0 10px; font-size:14px; }
     .grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(300px,1fr)); gap:12px; }
     .card { border:1px solid #eee; border-radius:14px; padding:12px; display:flex; gap:10px; background-color: white;}
     .iconBox { width:50px; height:50px; border:1px solid #f0f0f0; border-radius:12px; display:grid; place-items:center; }
-    .iconBox svg { width:24px; height:24px; }
+    .iconBox svg { width:30px; height:30px; }
     .name { font-weight:600; font-size:13px;display: flex; align-items: center; gap: 4px; }
     .code { font-family: ui-monospace; font-size:12px; color:#333; margin-top:4px; word-break:break-word; display: none; }
     button { margin-top:8px; margin-right:8px; border:1px solid #ddd; background:#fff; padding:4px 10px; border-radius:6px; cursor:pointer; font-size:10px; }
     .toast { position:fixed; bottom:18px; left:50%; transform:translateX(-50%); background:#111; color:#fff; padding:10px 12px; border-radius:12px; opacity:0; transition:.2s; pointer-events:none; }
     .toast.show { opacity:1; }
-
+    @media (max-width: 880px) {
+        header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
     .modal { position: fixed; inset: 0; display: none; z-index: 9999; }
   .modal.is-open { display: block; }
   .modal__backdrop { position: absolute; inset: 0; background: rgba(0,0,0,.45); }
@@ -90,7 +95,7 @@
   let data, q = "";
 
   function snippet(name) {
-    return `<svg width="24" height="24" aria-hidden="true"><use href="${data.spritePath}#${name}"></use></svg>`;
+    return `<svg class="" aria-hidden="true"><use href="${data.spritePath}#${name}"></use></svg>`;
   }
 
   function showToast(text) {

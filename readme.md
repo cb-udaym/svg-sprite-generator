@@ -6,7 +6,7 @@
         - Only the final file `sprite/sprite.svg` is needed for development on the website.
     - ?v or any param.. can be used incase cache needs to be rebuilt. (Refer sample below)
     - #icon-name can be used to select any icon in within the sprite.  (Refer sample below)
-    - Individual files' names and previews are available in the `icons/` folder. The same will be added in Figma soon for easier preview and understanding new icons.
+    - Individual files' names and previews are available in the `icons/` folder. The same is also available in this [githib pages link](https://cb-udaym.github.io/svg-sprite-generator/).
     - This repo will keep updating as we add new icons.
     - Sample usage of SVG sprite:
 ```
@@ -31,11 +31,8 @@
    - Use simple file names (e.g., `search.svg`, `home.svg`, `send-horizontal.svg`).
    - Follow this guide for naming convention: [Lucide icons guidelines](https://lucide.dev/guide/design/icon-design-guide#naming-conventions).
 5. **For repo maintainer:** 
-   - To generate a fresh sprite after adding new icons:
+   - To generate a fresh sprite after adding new icons and to run on local machine:
 ```
 npm run build-icons
-```
-   - To run in local machine:
-```
 npx serve .
 ```
