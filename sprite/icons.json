@@ -1,0 +1,72 @@
+{
+  "generatedAt": "2025-12-23T11:27:30.924Z",
+  "inputDir": "icons",
+  "spritePath": "sprite/sprite.svg",
+  "icons": [
+    {
+      "name": "batting-style-left-hand",
+      "file": "batting-style-left-hand.svg",
+      "addedDate": "2025-12-23"
+    },
+    {
+      "name": "batting-style-right-hand",
+      "file": "batting-style-right-hand.svg",
+      "addedDate": "2025-12-23"
+    },
+    {
+      "name": "bowling-style-fast",
+      "file": "bowling-style-fast.svg",
+      "addedDate": "2025-12-23"
+    },
+    {
+      "name": "bowling-style-leg-spin",
+      "file": "bowling-style-leg-spin.svg",
+      "addedDate": "2025-12-23"
+    },
+    {
+      "name": "bowling-style-medium-fast",
+      "file": "bowling-style-medium-fast.svg",
+      "addedDate": "2025-12-23"
+    },
+    {
+      "name": "bowling-style-off-spin",
+      "file": "bowling-style-off-spin.svg",
+      "addedDate": "2025-12-23"
+    },
+    {
+      "name": "copy",
+      "file": "copy.svg",
+      "addedDate": "2025-12-23"
+    },
+    {
+      "name": "arrow-drop-down",
+      "file": "arrow-drop-down.svg",
+      "addedDate": "2025-12-01"
+    },
+    {
+      "name": "close",
+      "file": "close.svg",
+      "addedDate": "2025-12-01"
+    },
+    {
+      "name": "emoticon-sad",
+      "file": "emoticon-sad.svg",
+      "addedDate": "2025-12-01"
+    },
+    {
+      "name": "filter",
+      "file": "filter.svg",
+      "addedDate": "2025-12-01"
+    },
+    {
+      "name": "info",
+      "file": "info.svg",
+      "addedDate": "2025-12-01"
+    },
+    {
+      "name": "sort",
+      "file": "sort.svg",
+      "addedDate": "2025-12-01"
+    }
+  ]
+}

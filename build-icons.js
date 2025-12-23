@@ -4,12 +4,60 @@ const fs = require('fs-extra');
 const path = require('path');
 const fg = require('fast-glob');
 const { optimize } = require('svgo');
+const { execSync } = require("child_process");
 const Sprite = require('svg-sprite');
 
 const INPUT_DIR = path.join(__dirname, 'icons'); // your source icons (can have subfolders)
 const TEMP_DIR = path.join(__dirname, 'temp-optimized');
 const OUT_DIR = path.join(__dirname, 'sprite');
 const OUT_FILE = path.join(OUT_DIR, 'sprite.svg');
+const JSON_OUT_DIR = path.join(__dirname, 'sprite');         // keep alongside sprite.svg
+const JSON_OUT_FILE = path.join(JSON_OUT_DIR, 'icons.json'); // sprite/icons.json
+
+
+// Prefer git “first added” date. Falls back to filesystem mtime.
+function getAddedDate(absPath) {
+  try {
+    const cmd = `git log --diff-filter=A --follow --format=%ad --date=short -- "${absPath}" | tail -n 1`;
+    const out = execSync(cmd, { stdio: ["ignore", "pipe", "ignore"] }).toString().trim();
+    if (out) return out; // YYYY-MM-DD
+  } catch {}
+  const stat = fs.statSync(absPath);
+  return new Date(stat.mtime).toISOString().slice(0, 10);
+}
+
+// If you want icon names to include folders: "actions/close".
+// If you want flat names only: "close".
+function iconNameFromRelPath(rel) {
+  // preserve folders, drop extension, normalize slashes
+  return rel.replace(/\\/g, "/").replace(/\.svg$/i, "");
+}
+
+async function generateIconsJson() {
+  // find all svg files in original INPUT_DIR (not temp)
+  const files = await fg('**/*.svg', { cwd: INPUT_DIR, dot: false });
+
+  const icons = files.map((rel) => {
+    const abs = path.join(INPUT_DIR, rel);
+    return {
+      name: iconNameFromRelPath(rel), // e.g. "close" or "actions/close"
+      file: rel.replace(/\\/g, "/"),  // relative path within INPUT_DIR
+      addedDate: getAddedDate(abs)    // YYYY-MM-DD
+    };
+  })
+  .sort((a, b) => b.addedDate.localeCompare(a.addedDate) || a.name.localeCompare(b.name));
+
+  await fs.ensureDir(JSON_OUT_DIR);
+  await fs.writeJson(JSON_OUT_FILE, {
+    generatedAt: new Date().toISOString(),
+    inputDir: "icons",
+    spritePath: "sprite/sprite.svg",
+    icons
+  }, { spaces: 2 });
+
+  console.log('✅ icons.json written to', JSON_OUT_FILE);
+}
+
 
 // SVGO config (minimal; you can add/remove plugins you want)
 const svgoConfig = {
@@ -141,6 +189,10 @@ async function run() {
     console.log('Post-processing sprite (preserve mask contents)...');
     await postProcessSprite();
     await fs.remove(TEMP_DIR);
+
+    console.log('Generating icons.json...');
+    await generateIconsJson();
+
     console.log('✅ Sprite written to', OUT_FILE);
   } catch (err) {
     console.error('Error building sprite:', err);

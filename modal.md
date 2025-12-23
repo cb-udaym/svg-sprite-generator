@@ -1,13 +1,8 @@
-## Guidelines for SVG sprites [Internal Tool]
-
-1. This repo optimises the individual SVG icons and reduces the sizes using svgo. Then it changes all black colors to 'currentColor', so that it can be modified later via css. It then creates the svg sprite.
-2. **For Web Developers:**
-    - The file in the `sprite/` folder will always be the latest sprite.
-        - Only the final file `sprite/sprite.svg` is needed for development on the website.
+1. **For Web Developers:**
+    - Download the latest sprite file
     - ?v or any param.. can be used incase cache needs to be rebuilt. (Refer sample below)
     - #icon-name can be used to select any icon in within the sprite.  (Refer sample below)
-    - Individual files' names and previews are available in the `icons/` folder. The same will be added in Figma soon for easier preview and understanding new icons.
-    - This repo will keep updating as we add new icons.
+    - This site will keep updating as we add new icons
     - Sample usage of SVG sprite:
 ```
 <svg class="sprite-icon">
@@ -23,19 +18,9 @@
   }
 </style>
 ```
-3. **For Designers:**
-   - Place raw SVGs in the `icons/` folder.  
+2. **For Designers:**
    - Add icons in 24x24 so that consistency is maintained.
    - Add 4px padding within the viewBox, so that consistency is maintained. Example icon sizes within viewBox: 20x20, 15x20, 20x14.
    - All icons should be monochrome and black.
    - Use simple file names (e.g., `search.svg`, `home.svg`, `send-horizontal.svg`).
    - Follow this guide for naming convention: [Lucide icons guidelines](https://lucide.dev/guide/design/icon-design-guide#naming-conventions).
-5. **For repo maintainer:** 
-   - To generate a fresh sprite after adding new icons:
-```
-npm run build-icons
-```
-   - To run in local machine:
-```
-npx serve .
-```
