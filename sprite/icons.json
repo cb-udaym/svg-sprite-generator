@@ -1,36 +1,36 @@
 {
-  "generatedAt": "2025-12-23T11:27:30.924Z",
+  "generatedAt": "2025-12-24T10:53:31.041Z",
   "inputDir": "icons",
   "spritePath": "sprite/sprite.svg",
   "icons": [
     {
-      "name": "batting-style-left-hand",
-      "file": "batting-style-left-hand.svg",
+      "name": "ball-fire",
+      "file": "ball-fire.svg",
       "addedDate": "2025-12-23"
     },
     {
-      "name": "batting-style-right-hand",
-      "file": "batting-style-right-hand.svg",
+      "name": "ball-moving",
+      "file": "ball-moving.svg",
       "addedDate": "2025-12-23"
     },
     {
-      "name": "bowling-style-fast",
-      "file": "bowling-style-fast.svg",
+      "name": "ball-rotate-left",
+      "file": "ball-rotate-left.svg",
       "addedDate": "2025-12-23"
     },
     {
-      "name": "bowling-style-leg-spin",
-      "file": "bowling-style-leg-spin.svg",
+      "name": "ball-rotate-right",
+      "file": "ball-rotate-right.svg",
       "addedDate": "2025-12-23"
     },
     {
-      "name": "bowling-style-medium-fast",
-      "file": "bowling-style-medium-fast.svg",
+      "name": "bat-lhb",
+      "file": "bat-lhb.svg",
       "addedDate": "2025-12-23"
     },
     {
-      "name": "bowling-style-off-spin",
-      "file": "bowling-style-off-spin.svg",
+      "name": "bat-rhb",
+      "file": "bat-rhb.svg",
       "addedDate": "2025-12-23"
     },
     {
