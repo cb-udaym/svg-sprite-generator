@@ -1,72 +1,2900 @@
 {
-  "generatedAt": "2025-12-24T10:53:31.041Z",
+  "generatedAt": "2025-12-30T05:27:26.628Z",
   "inputDir": "icons",
   "spritePath": "sprite/sprite.svg",
   "icons": [
     {
+      "name": "willow-by-cricbuzz-logo",
+      "file": "willow-by-cricbuzz-logo.svg",
+      "addedDate": "2025-12-30",
+      "addedTs": 1767069542857,
+      "oldClasses": [],
+      "oldColors": [
+        {
+          "value": "#FFFFFF",
+          "label": "default"
+        }
+      ],
+      "keywords": [
+        "willow by cricbuzz",
+        "logo"
+      ],
+      "note": null,
+      "category": "logo"
+    },
+    {
+      "name": "letter-w",
+      "file": "letter-w.svg",
+      "addedDate": "2025-12-30",
+      "addedTs": 1767069532139,
+      "oldClasses": [
+        "cbWillowDarkIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "rgba(0, 0, 0, 0.54)",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "willow"
+      ],
+      "note": null,
+      "category": "logo"
+    },
+    {
+      "name": "playback-rewind",
+      "file": "playback-rewind.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766994092689,
+      "oldClasses": [
+        "cbPlayerSkipBackward"
+      ],
+      "oldColors": [
+        {
+          "value": "#FFFFFF",
+          "label": "default"
+        }
+      ],
+      "keywords": [
+        "music",
+        "video",
+        "rewind",
+        "back"
+      ],
+      "note": null,
+      "category": "video"
+    },
+    {
+      "name": "list-video",
+      "file": "list-video.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700235,
+      "oldClasses": [
+        "cbListIcon",
+        "cbPlaylistIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "#FFFFFF",
+          "label": "default"
+        }
+      ],
+      "keywords": [
+        "music",
+        "video",
+        "playlist"
+      ],
+      "note": null,
+      "category": "video"
+    },
+    {
+      "name": "volume-1",
+      "file": "volume-1.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700235,
+      "oldClasses": [
+        "cbAudioIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        }
+      ],
+      "keywords": [
+        "mute",
+        "unmute",
+        "speaker",
+        "music",
+        "sound",
+        "audio"
+      ],
+      "note": null,
+      "category": "video"
+    },
+    {
+      "name": "volume-x",
+      "file": "volume-x.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700235,
+      "oldClasses": [],
+      "oldColors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        }
+      ],
+      "keywords": [
+        "mute",
+        "unmute",
+        "speaker",
+        "music",
+        "sound",
+        "audio"
+      ],
+      "note": null,
+      "category": "video"
+    },
+    {
+      "name": "pause",
+      "file": "pause.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700234,
+      "oldClasses": [
+        "cbPlayerPauseIcon",
+        "cbPauseIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "#FFFFFF",
+          "label": "default"
+        }
+      ],
+      "keywords": [
+        "music",
+        "video",
+        "audio",
+        "stop",
+        "pasue"
+      ],
+      "note": null,
+      "category": "video"
+    },
+    {
+      "name": "playback-forward",
+      "file": "playback-forward.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700234,
+      "oldClasses": [
+        "cbPlayerSkipForward"
+      ],
+      "oldColors": [
+        {
+          "value": "#FFFFFF",
+          "label": "default"
+        }
+      ],
+      "keywords": [
+        "music",
+        "video",
+        "forward"
+      ],
+      "note": null,
+      "category": "video"
+    },
+    {
+      "name": "tv-icon-outline",
+      "file": "tv-icon-outline.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700234,
+      "oldClasses": [],
+      "oldColors": [
+        {
+          "value": "rgba(0, 0, 0, 0.54)",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "tv",
+        "live tv"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "chevrons-down",
+      "file": "chevrons-down.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700233,
+      "oldClasses": [
+        "cbexpandIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "arrow",
+        "direction",
+        "down",
+        "south"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "chevrons-up",
+      "file": "chevrons-up.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700233,
+      "oldClasses": [
+        "cbcollapseIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "arrow",
+        "direction",
+        "up",
+        "north"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "live-logo",
+      "file": "live-logo.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700233,
+      "oldClasses": [
+        "cbLiveStreamIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "#E90B37",
+          "label": "default"
+        }
+      ],
+      "keywords": [
+        "live",
+        "video",
+        "play"
+      ],
+      "note": null,
+      "category": "video"
+    },
+    {
+      "name": "megaphone",
+      "file": "megaphone.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700233,
+      "oldClasses": [
+        "cbAdvertiseIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "rgba(0, 0, 0, 0.54)",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "ads",
+        "advertise",
+        "broadcast",
+        "announcement",
+        "loud speaker"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "android-logo",
+      "file": "android-logo.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700232,
+      "oldClasses": [
+        "cbAndroidIcon",
+        "cbAndroidIconDark"
+      ],
+      "oldColors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "social media",
+        "logo",
+        "android",
+        "playstore",
+        "google",
+        "platform"
+      ],
+      "note": null,
+      "category": "social"
+    },
+    {
+      "name": "apple-logo",
+      "file": "apple-logo.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700232,
+      "oldClasses": [
+        "cbAppleIcon",
+        "cbIOS"
+      ],
+      "oldColors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "social media",
+        "logo",
+        "apple",
+        "appstore",
+        "platform"
+      ],
+      "note": null,
+      "category": "social"
+    },
+    {
+      "name": "social-facebook",
+      "file": "social-facebook.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700232,
+      "oldClasses": [
+        "cbFacebookIcon",
+        "cbFbIcon",
+        "cbFbLogoB",
+        "cbFbLogoW"
+      ],
+      "oldColors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "social media",
+        "logo",
+        "facebook",
+        "meta"
+      ],
+      "note": "For social icons used in the share card, please add a circular bg with colors as per old sprite",
+      "category": "social"
+    },
+    {
+      "name": "social-linkedin",
+      "file": "social-linkedin.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700232,
+      "oldClasses": [
+        "cbLinkedinIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "social media",
+        "logo",
+        "linkedin"
+      ],
+      "note": "For social icons used in the share card, please add a circular bg with colors as per old sprite",
+      "category": "social"
+    },
+    {
+      "name": "social-whatsapp",
+      "file": "social-whatsapp.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700232,
+      "oldClasses": [
+        "cbWhatsappIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "social media",
+        "logo",
+        "whatsapp"
+      ],
+      "note": "For social icons used in the share card, please add a circular bg with colors as per old sprite",
+      "category": "social"
+    },
+    {
+      "name": "social-x",
+      "file": "social-x.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700232,
+      "oldClasses": [
+        "cbXIcon",
+        "cbTwitterLogoW",
+        "cbTwitterLogoB"
+      ],
+      "oldColors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "social media",
+        "logo",
+        "x",
+        "twitter"
+      ],
+      "note": "For social icons used in the share card, please add a circular bg with colors as per old sprite",
+      "category": "social"
+    },
+    {
+      "name": "social-youtube",
+      "file": "social-youtube.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700232,
+      "oldClasses": [
+        "cbYoutubeIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "social media",
+        "logo",
+        "youtube"
+      ],
+      "note": null,
+      "category": "social"
+    },
+    {
+      "name": "arrow-right",
+      "file": "arrow-right.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700231,
+      "oldClasses": [],
+      "oldColors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "right",
+        "direction",
+        "arrow",
+        "east"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "no-ads",
+      "file": "no-ads.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700231,
+      "oldClasses": [
+        "cbPlusNoIntrusiveAdsIcoB"
+      ],
+      "oldColors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "no ads",
+        "ads free"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "star-filled",
+      "file": "star-filled.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700231,
+      "oldClasses": [
+        "cbNewPremiumIcon",
+        "cbPlusPremiumContentIcon",
+        "cbPremiumIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "rgba(0, 0, 0, 0.54)",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "bookmark",
+        "premium",
+        "plus",
+        "favorite",
+        "review",
+        "rating"
+      ],
+      "note": "For premium icon, please add background shapes and colors as per current icon. (icon: white, circle-bg: #00B48A, rectBg: black )",
+      "category": "interface"
+    },
+    {
+      "name": "user",
+      "file": "user.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700231,
+      "oldClasses": [
+        "cbPlayerIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "rgba(0, 0, 0, 0.54)",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "people",
+        "user",
+        "person",
+        "player"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "users",
+      "file": "users.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700231,
+      "oldClasses": [
+        "cbMultipleUserIcon",
+        "cbTeamIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "rgba(0, 0, 0, 0.54)",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "people",
+        "users",
+        "persons",
+        "group"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "arrow-left",
+      "file": "arrow-left.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700230,
+      "oldClasses": [
+        "cbBackwardBlackArrow",
+        "cbBackwardArrow"
+      ],
+      "oldColors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "left",
+        "direction",
+        "arrow",
+        "west"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "badge-ad",
+      "file": "badge-ad.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700230,
+      "oldClasses": [
+        "cb11SmallAdIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "#000000",
+          "label": "default"
+        }
+      ],
+      "keywords": [
+        "ad",
+        "bagde",
+        "label"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "check",
+      "file": "check.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700230,
+      "oldClasses": [
+        "cbRight",
+        "cbTickIcoW",
+        "cbRightIcon",
+        "cbGreenRightTick",
+        "cbRightTick",
+        "cbIcoSuccess"
+      ],
+      "oldColors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        },
+        {
+          "value": "#00B48A",
+          "label": "green"
+        }
+      ],
+      "keywords": [
+        "done",
+        "tick",
+        "right",
+        "complete",
+        "task"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "circle-close",
+      "file": "circle-close.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700230,
+      "oldClasses": [
+        "cbClearInputIcoB",
+        "cbCrossButtonCircularDark",
+        "cbCrossButtonCircular",
+        "cbCloseGreenIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "cancel",
+        "close",
+        "remove",
+        "times",
+        "clear",
+        "cross"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "play",
+      "file": "play.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700230,
+      "oldClasses": [
+        "cbPlayerPlayIcon",
+        "cbPlayIcon",
+        "cbPlayButtonIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "#FFFFFF",
+          "label": "default"
+        }
+      ],
+      "keywords": [
+        "music",
+        "video",
+        "play",
+        "start",
+        "run"
+      ],
+      "note": null,
+      "category": "video"
+    },
+    {
+      "name": "trophy-star",
+      "file": "trophy-star.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700230,
+      "oldClasses": [
+        "cbPlusFantasyHandbookIcoB"
+      ],
+      "oldColors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#000000",
+          "label": "black"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "series",
+        "winner",
+        "cup",
+        "award",
+        "star",
+        "fantasy"
+      ],
+      "note": null,
+      "category": "cricket"
+    },
+    {
+      "name": "dotted-arrow-up",
+      "file": "dotted-arrow-up.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700229,
+      "oldClasses": [
+        "cbPlayerIn",
+        "cbRankUpIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "#00B48A",
+          "label": "default"
+        }
+      ],
+      "keywords": [
+        "arrow",
+        "direction",
+        "up",
+        "north"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "scoreboard",
+      "file": "scoreboard.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700229,
+      "oldClasses": [
+        "cbScoreCardIco"
+      ],
+      "oldColors": [
+        {
+          "value": "#FFFFFF",
+          "label": "default"
+        }
+      ],
+      "keywords": [
+        "scoreboard",
+        "fantasy",
+        "scorecard"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "briefcase",
+      "file": "briefcase.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700228,
+      "oldClasses": [
+        "cbResumeIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "rgba(0, 0, 0, 0.54)",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "resume",
+        "job",
+        "suitcase",
+        "work",
+        "bag"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "dotted-arrow-down",
+      "file": "dotted-arrow-down.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700228,
+      "oldClasses": [
+        "cbPlayerOut",
+        "cbRankDownIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "#F56783",
+          "label": "default"
+        }
+      ],
+      "keywords": [
+        "arrow",
+        "direction",
+        "down",
+        "south"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "list",
+      "file": "list.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700227,
+      "oldClasses": [
+        "cbNewPlaylistIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "rgba(0, 0, 0, 0.54)",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "list",
+        "items",
+        "playlist",
+        "options"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "replay",
+      "file": "replay.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700227,
+      "oldClasses": [
+        "cbPlayerForwardIcon",
+        "cbPlayerReplayIcon",
+        "cbReplayIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "#FFFFFF",
+          "label": "default"
+        }
+      ],
+      "keywords": [
+        "music",
+        "video",
+        "rewind",
+        "replay",
+        "forward",
+        "history",
+        "redo",
+        "undo"
+      ],
+      "note": null,
+      "category": "video"
+    },
+    {
+      "name": "smartphone",
+      "file": "smartphone.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700227,
+      "oldClasses": [
+        "cbmobile",
+        "cbMobileIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "phone",
+        "mobile",
+        "device"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "social-instagram",
+      "file": "social-instagram.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700227,
+      "oldClasses": [],
+      "oldColors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "social media",
+        "logo",
+        "instagram"
+      ],
+      "note": null,
+      "category": "social"
+    },
+    {
+      "name": "graph-sparkle",
+      "file": "graph-sparkle.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700226,
+      "oldClasses": [
+        "cbGraphIcon",
+        "cbRecordsIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "rgba(0, 0, 0, 0.54)",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "graph",
+        "records",
+        "trend",
+        "stats"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "message-square-more",
+      "file": "message-square-more.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700226,
+      "oldClasses": [
+        "cbFeedbackIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "rgba(0, 0, 0, 0.54)",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "message",
+        "text",
+        "envelope",
+        "message",
+        "comment",
+        "chat",
+        "conversation",
+        "speech bubble"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "search",
+      "file": "search.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700226,
+      "oldClasses": [
+        "cbMagnifyingGlassDark",
+        "cbMagnifyingGlassWhite"
+      ],
+      "oldColors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "search",
+        "magnify",
+        "glass",
+        "find",
+        "scan"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "share",
+      "file": "share.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700226,
+      "oldClasses": [
+        "cbShareIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "rgba(0, 0, 0, 0.54)",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "share",
+        "forward",
+        "social"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "table",
+      "file": "table.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700226,
+      "oldClasses": [
+        "cbICCWorldIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "rgba(0, 0, 0, 0.54)",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "table",
+        "points",
+        "sheet",
+        "ranking"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "trending-up-lines",
+      "file": "trending-up-lines.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700226,
+      "oldClasses": [
+        "cbRankingIconW",
+        "cbRankingIconM"
+      ],
+      "oldColors": [
+        {
+          "value": "rgba(0, 0, 0, 0.54)",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "trending",
+        "graph",
+        "up",
+        "ranking"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "calendar",
+      "file": "calendar.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700225,
+      "oldClasses": [
+        "cbScheduleIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "rgba(0, 0, 0, 0.54)",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "calendar",
+        "schedule",
+        "day",
+        "month"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "hammer",
+      "file": "hammer.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700225,
+      "oldClasses": [
+        "cbHammerIcon",
+        "cbAuctionTrackerIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "rgba(0, 0, 0, 0.54)",
+          "label": "default"
+        },
+        {
+          "value": "#000000",
+          "label": "black"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "auction",
+        "sold",
+        "hammer",
+        "gavel",
+        "..."
+      ],
+      "note": null,
+      "category": "tools"
+    },
+    {
+      "name": "history",
+      "file": "history.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700225,
+      "oldClasses": [
+        "cbArchivesIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "rgba(0, 0, 0, 0.54)",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "history",
+        "archives",
+        "time"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "image",
+      "file": "image.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700225,
+      "oldClasses": [
+        "cbImgDark",
+        "cbImgWht",
+        "cbPhotosIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "rgba(0, 0, 0, 0.54)",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "image",
+        "photo",
+        "picture"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "badge-star",
+      "file": "badge-star.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700224,
+      "oldClasses": [
+        "cbSubcriptionIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "badge",
+        "star",
+        "subscription",
+        "plus"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "circle-minus",
+      "file": "circle-minus.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700224,
+      "oldClasses": [
+        "cbDelAccIcoB",
+        "cbDelAccIcoW"
+      ],
+      "oldColors": [
+        {
+          "value": "#E90B37",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "delete",
+        "minus",
+        "subtract",
+        "remove"
+      ],
+      "note": null,
+      "category": "account and payments"
+    },
+    {
+      "name": "clipboard",
+      "file": "clipboard.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700224,
+      "oldClasses": [
+        "cbPasteClipboardIco",
+        "cbPaste"
+      ],
+      "oldColors": [
+        {
+          "value": "#0579BC",
+          "label": "default"
+        },
+        {
+          "value": "#5797BC",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "copy",
+        "paste"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "external-link",
+      "file": "external-link.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700224,
+      "oldClasses": [
+        "cbExternalNavIcon",
+        "cbBtnLinkRedirectIco"
+      ],
+      "oldColors": [
+        {
+          "value": "#FFFFFF",
+          "label": "white"
+        },
+        {
+          "value": "#0579BC",
+          "label": "blue"
+        },
+        {
+          "value": "#5797BC",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "redirect",
+        "link",
+        "navigate",
+        "external",
+        "arrow"
+      ],
+      "note": null,
+      "category": "navigation"
+    },
+    {
+      "name": "plane",
+      "file": "plane.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700224,
+      "oldClasses": [
+        "cbOverseas"
+      ],
+      "oldColors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFFB3",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "flight",
+        "overseas",
+        "foreign",
+        "aeroplane"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "badge-percent",
+      "file": "badge-percent.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700223,
+      "oldClasses": [
+        "cbDealsIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "badge",
+        "percent",
+        "discount",
+        "deals",
+        "offer"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "plus",
+      "file": "plus.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700223,
+      "oldClasses": [
+        "cbPlusSignIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "plus",
+        "add"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "user-group",
+      "file": "user-group.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700223,
+      "oldClasses": [
+        "cbTeamsIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "rgba(0, 0, 0, 0.54)",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "people",
+        "users",
+        "persons",
+        "group",
+        "team"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "monitor-play",
+      "file": "monitor-play.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700222,
+      "oldClasses": [
+        "cbPlusCricbuzzOriginalsIcoB"
+      ],
+      "oldColors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "CB originals",
+        "videos"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "trophy",
+      "file": "trophy.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700222,
+      "oldClasses": [
+        "cbFantasyIcon",
+        "cbSeriesIcon",
+        "cbSeriesIconBlack",
+        "cbSeriesIcon",
+        "cbTrophyWhiteIcon",
+        "cbTrophyIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "rgba(0, 0, 0, 0.54)",
+          "label": "default"
+        },
+        {
+          "value": "#000000",
+          "label": "black"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "series",
+        "winner",
+        "cup",
+        "award"
+      ],
+      "note": "For fantasy icon, please add the circular bg similar to old icon. (icon: #FFF175. bg: #122483)",
+      "category": "cricket"
+    },
+    {
+      "name": "arrow-drop-up",
+      "file": "arrow-drop-up.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700221,
+      "oldClasses": [
+        "cbCrtIcnGreen"
+      ],
+      "oldColors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        },
+        {
+          "value": "#00B48A",
+          "label": "green"
+        }
+      ],
+      "keywords": [
+        "caret",
+        "up",
+        "direction",
+        "arrow",
+        "north"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "chevron-down",
+      "file": "chevron-down.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700221,
+      "oldClasses": [
+        "cbArrowDownIcon",
+        "cbDownArrowIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "arrow",
+        "direction",
+        "down",
+        "south"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "chevron-left",
+      "file": "chevron-left.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700221,
+      "oldClasses": [],
+      "oldColors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "arrow",
+        "direction",
+        "left",
+        "west"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "chevron-up",
+      "file": "chevron-up.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700221,
+      "oldClasses": [
+        "cbArrowUpIcon",
+        "cbUpArrowIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "arrow",
+        "direction",
+        "up",
+        "north"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "lock",
+      "file": "lock.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700221,
+      "oldClasses": [
+        "cbLockRedIcon",
+        "cbPrivacyIconDark",
+        "cbPrivacyIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "#E90B37",
+          "label": "red"
+        },
+        {
+          "value": "#F1637F",
+          "label": "redOnDarkBgs"
+        },
+        {
+          "value": "#464646",
+          "label": "white"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "lock",
+        "password",
+        "blocked",
+        "secure",
+        "unlock",
+        "privacy"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "chevron-right",
+      "file": "chevron-right.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700220,
+      "oldClasses": [
+        "cbCrtIcn",
+        "cbCrtIcnDark",
+        "cbMoreRightIconDark"
+      ],
+      "oldColors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "arrow",
+        "direction",
+        "right",
+        "east"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "circle-user",
+      "file": "circle-user.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700220,
+      "oldClasses": [
+        "cbProfileIcoB",
+        "cbProfileIcoW",
+        "cbPflIcn"
+      ],
+      "oldColors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "person",
+        "user",
+        "account"
+      ],
+      "note": null,
+      "category": "account and payments"
+    },
+    {
+      "name": "credit-card",
+      "file": "credit-card.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700220,
+      "oldClasses": [
+        "cbPymntCardIcoB",
+        "cbPymntCardIcoW"
+      ],
+      "oldColors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "payment",
+        "credit card",
+        "bank",
+        "purchase",
+        "cc"
+      ],
+      "note": null,
+      "category": "account and payments"
+    },
+    {
+      "name": "mail",
+      "file": "mail.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700220,
+      "oldClasses": [
+        "cbEmail",
+        "cbMailIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "mail",
+        "email",
+        "envelope",
+        "message"
+      ],
+      "note": "For social icons used in the share card, please add a circular bg with colors as per old sprite",
+      "category": "interface"
+    },
+    {
+      "name": "pencil",
+      "file": "pencil.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700220,
+      "oldClasses": [
+        "cbEditIcoB",
+        "cbEditText"
+      ],
+      "oldColors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "edit",
+        "create",
+        "draw",
+        "write"
+      ],
+      "note": null,
+      "category": "account and payments"
+    },
+    {
+      "name": "tag",
+      "file": "tag.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700220,
+      "oldClasses": [
+        "cbCouponIcoB",
+        "cbCouponIcoW"
+      ],
+      "oldColors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "label",
+        "badge",
+        "ticket",
+        "coupon",
+        "mark"
+      ],
+      "note": null,
+      "category": "account and payments"
+    },
+    {
+      "name": "ticket-star",
+      "file": "ticket-star.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700220,
+      "oldClasses": [
+        "cbIcoRedeemCouponB",
+        "cbIcoRedeemCouponW"
+      ],
+      "oldColors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "coupon",
+        "redeem",
+        "pass",
+        "entry",
+        "event",
+        "voucher"
+      ],
+      "note": null,
+      "category": "account and payments"
+    },
+    {
+      "name": "circle-play",
+      "file": "circle-play.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700219,
+      "oldClasses": [
+        "cbVideoIconDark",
+        "cbVideoIconBlack",
+        "cbVideoIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "rgba(0, 0, 0, 0.54)",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        },
+        {
+          "value": "#000000",
+          "label": "black"
+        }
+      ],
+      "keywords": [
+        "videos",
+        "play",
+        "start",
+        "run"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "circle-question-mark",
+      "file": "circle-question-mark.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700219,
+      "oldClasses": [
+        "cbGetSupportIcoB",
+        "cbGetSupportIcoW"
+      ],
+      "oldColors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "support",
+        "question mark",
+        "help"
+      ],
+      "note": null,
+      "category": "account and payments"
+    },
+    {
+      "name": "ellipsis-vertical",
+      "file": "ellipsis-vertical.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700219,
+      "oldClasses": [
+        "cbVerticalMenu",
+        "cbMoreIconBlack",
+        "cbMoreIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "rgba(0, 0, 0, 0.54)",
+          "label": "default"
+        },
+        {
+          "value": "#000000",
+          "label": "black"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "menu",
+        "options",
+        "more",
+        "dots",
+        "..."
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "octagon-alert",
+      "file": "octagon-alert.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700219,
+      "oldClasses": [
+        "cbExclmtnIco",
+        "cbAlertIcoW",
+        "cbAlertIcoB",
+        "cbExclamationIcon",
+        "cbIcoFail"
+      ],
+      "oldColors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "warning",
+        "alert",
+        "danger",
+        "exclamation mark"
+      ],
+      "note": "For cbExclamationIcon in payment failure case, this icon can be used instead",
+      "category": "interface"
+    },
+    {
+      "name": "power",
+      "file": "power.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700219,
+      "oldClasses": [
+        "cbSignOutIcoB",
+        "cbSignOutIcoW"
+      ],
+      "oldColors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "on",
+        "off",
+        "sign out",
+        "log out"
+      ],
+      "note": null,
+      "category": "account and payments"
+    },
+    {
+      "name": "voucher-digital",
+      "file": "voucher-digital.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700219,
+      "oldClasses": [
+        "cbManageSubsIcoB",
+        "cbManageSubsIcoW"
+      ],
+      "oldColors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "manage",
+        "subscription",
+        "payment",
+        "plan"
+      ],
+      "note": null,
+      "category": "account and payments"
+    },
+    {
+      "name": "cricket",
+      "file": "cricket.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700218,
+      "oldClasses": [
+        "cbMatchIconBlack",
+        "cbMatchIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "rgba(0, 0, 0, 0.54)",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        },
+        {
+          "value": "#000000",
+          "label": "black"
+        }
+      ],
+      "keywords": [
+        "matches",
+        "stumps",
+        "bat",
+        "ball",
+        "bails"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "document",
+      "file": "document.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700218,
+      "oldClasses": [
+        "cbNewsIcoW",
+        "cbTermsofUse",
+        "cbPlusNewsIcoB",
+        "cbNewsIconBlack",
+        "cbNewsIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "rgba(0, 0, 0, 0.54)",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        },
+        {
+          "value": "#000000",
+          "label": "black"
+        }
+      ],
+      "keywords": [
+        "news",
+        "article",
+        "editorial"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "home-filled",
+      "file": "home-filled.svg",
+      "addedDate": "2025-12-29",
+      "addedTs": 1766989700218,
+      "oldClasses": [
+        "cbHomeIcon",
+        "cbHomeIconBlack"
+      ],
+      "oldColors": [
+        {
+          "value": "rgba(0, 0, 0, 0.54)",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        },
+        {
+          "value": "#000000",
+          "label": "black"
+        }
+      ],
+      "keywords": [
+        "home",
+        "index"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "cricbuzz-11-logo",
+      "file": "cricbuzz-11-logo.svg",
+      "addedDate": "2025-12-28",
+      "addedTs": 1766931637525,
+      "oldClasses": [
+        "cb11FullNameIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "#FFFFFF",
+          "label": "default"
+        }
+      ],
+      "keywords": [
+        "cricbuzz11",
+        "11",
+        "eleven",
+        "logo",
+        "fantasy"
+      ],
+      "note": null,
+      "category": "logo"
+    },
+    {
+      "name": "cricbuzz-logo",
+      "file": "cricbuzz-logo.svg",
+      "addedDate": "2025-12-28",
+      "addedTs": 1766931637524,
+      "oldClasses": [
+        "cblogo",
+        "cbLogoSvg"
+      ],
+      "oldColors": [
+        {
+          "value": "#FFFFFF",
+          "label": "default"
+        }
+      ],
+      "keywords": [
+        "cricbuzz",
+        "logo"
+      ],
+      "note": null,
+      "category": "logo"
+    },
+    {
+      "name": "scorecard-3",
+      "file": "scorecard-3.svg",
+      "addedDate": "2025-12-28",
+      "addedTs": 1766931206017,
+      "oldClasses": [
+        "cb-text-3"
+      ],
+      "oldColors": [],
+      "keywords": [
+        "score",
+        "card",
+        "board"
+      ],
+      "note": "This icon's color cannot be changed. Default color can be used.",
+      "category": "scoreboard"
+    },
+    {
+      "name": "scorecard-6",
+      "file": "scorecard-6.svg",
+      "addedDate": "2025-12-28",
+      "addedTs": 1766931206017,
+      "oldClasses": [
+        "cb-text-6"
+      ],
+      "oldColors": [],
+      "keywords": [
+        "score",
+        "card",
+        "board"
+      ],
+      "note": "This icon's color cannot be changed. Default color can be used.",
+      "category": "scoreboard"
+    },
+    {
+      "name": "scorecard-8",
+      "file": "scorecard-8.svg",
+      "addedDate": "2025-12-28",
+      "addedTs": 1766931206017,
+      "oldClasses": [
+        "cb-text-8"
+      ],
+      "oldColors": [],
+      "keywords": [
+        "score",
+        "card",
+        "board"
+      ],
+      "note": "This icon's color cannot be changed. Default color can be used.",
+      "category": "scoreboard"
+    },
+    {
+      "name": "scorecard-9",
+      "file": "scorecard-9.svg",
+      "addedDate": "2025-12-28",
+      "addedTs": 1766931206017,
+      "oldClasses": [
+        "cb-text-9"
+      ],
+      "oldColors": [],
+      "keywords": [
+        "score",
+        "card",
+        "board"
+      ],
+      "note": "This icon's color cannot be changed. Default color can be used.",
+      "category": "scoreboard"
+    },
+    {
+      "name": "scorecard-0",
+      "file": "scorecard-0.svg",
+      "addedDate": "2025-12-28",
+      "addedTs": 1766931206016,
+      "oldClasses": [
+        "cb-text-0"
+      ],
+      "oldColors": [],
+      "keywords": [
+        "score",
+        "card",
+        "board"
+      ],
+      "note": "This icon's color cannot be changed. Default color can be used.",
+      "category": "scoreboard"
+    },
+    {
+      "name": "scorecard-1",
+      "file": "scorecard-1.svg",
+      "addedDate": "2025-12-28",
+      "addedTs": 1766931206016,
+      "oldClasses": [
+        "cb-text-1"
+      ],
+      "oldColors": [],
+      "keywords": [
+        "score",
+        "card",
+        "board"
+      ],
+      "note": "This icon's color cannot be changed. Default color can be used.",
+      "category": "scoreboard"
+    },
+    {
+      "name": "scorecard-2",
+      "file": "scorecard-2.svg",
+      "addedDate": "2025-12-28",
+      "addedTs": 1766931206016,
+      "oldClasses": [
+        "cb-text-2"
+      ],
+      "oldColors": [],
+      "keywords": [
+        "score",
+        "card",
+        "board"
+      ],
+      "note": "This icon's color cannot be changed. Default color can be used.",
+      "category": "scoreboard"
+    },
+    {
+      "name": "scorecard-4",
+      "file": "scorecard-4.svg",
+      "addedDate": "2025-12-28",
+      "addedTs": 1766931206016,
+      "oldClasses": [
+        "cb-text-4"
+      ],
+      "oldColors": [],
+      "keywords": [
+        "score",
+        "card",
+        "board"
+      ],
+      "note": "This icon's color cannot be changed. Default color can be used.",
+      "category": "scoreboard"
+    },
+    {
+      "name": "scorecard-5",
+      "file": "scorecard-5.svg",
+      "addedDate": "2025-12-28",
+      "addedTs": 1766931206016,
+      "oldClasses": [
+        "cb-text-5"
+      ],
+      "oldColors": [],
+      "keywords": [
+        "score",
+        "card",
+        "board"
+      ],
+      "note": "This icon's color cannot be changed. Default color can be used.",
+      "category": "scoreboard"
+    },
+    {
+      "name": "scorecard-7",
+      "file": "scorecard-7.svg",
+      "addedDate": "2025-12-28",
+      "addedTs": 1766931206016,
+      "oldClasses": [
+        "cb-text-7"
+      ],
+      "oldColors": [],
+      "keywords": [
+        "score",
+        "card",
+        "board"
+      ],
+      "note": "This icon's color cannot be changed. Default color can be used.",
+      "category": "scoreboard"
+    },
+    {
+      "name": "cb11-icon-ad-colored",
+      "file": "cb11-icon-ad-colored.svg",
+      "addedDate": "2025-12-28",
+      "addedTs": 1766931064226,
+      "oldClasses": [
+        "cb11AdIcon"
+      ],
+      "oldColors": [],
+      "keywords": [
+        "cricbuzz11",
+        "11",
+        "eleven",
+        "logo",
+        "ad",
+        "fantasy"
+      ],
+      "note": "This icon's color cannot be changed. Default color can be used.",
+      "category": "logo"
+    },
+    {
+      "name": "cb11-icon-colored",
+      "file": "cb11-icon-colored.svg",
+      "addedDate": "2025-12-28",
+      "addedTs": 1766931064225,
+      "oldClasses": [
+        "cb11Icon"
+      ],
+      "oldColors": [],
+      "keywords": [
+        "cricbuzz11",
+        "11",
+        "eleven",
+        "logo",
+        "fantasy"
+      ],
+      "note": "This icon's color cannot be changed. Default color can be used.",
+      "category": "logo"
+    },
+    {
+      "name": "cricbuzz-11-icon",
+      "file": "cricbuzz-11-icon.svg",
+      "addedDate": "2025-12-28",
+      "addedTs": 1766931064225,
+      "oldClasses": [
+        "cb11BlackIcon",
+        "cb11Banner"
+      ],
+      "oldColors": [
+        {
+          "value": "#000000",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "cricbuzz11",
+        "11",
+        "eleven",
+        "logo",
+        "fantasy"
+      ],
+      "note": null,
+      "category": "logo"
+    },
+    {
+      "name": "download-app-store",
+      "file": "download-app-store.svg",
+      "addedDate": "2025-12-28",
+      "addedTs": 1766931064225,
+      "oldClasses": [
+        "cbAppStoreIcon"
+      ],
+      "oldColors": [],
+      "keywords": [
+        "download",
+        "app",
+        "appstore",
+        "apple"
+      ],
+      "note": "This icon's color cannot be changed. Default color can be used.",
+      "category": "logo"
+    },
+    {
+      "name": "download-play-store",
+      "file": "download-play-store.svg",
+      "addedDate": "2025-12-28",
+      "addedTs": 1766931064225,
+      "oldClasses": [
+        "cbGooglePlayIcon"
+      ],
+      "oldColors": [],
+      "keywords": [
+        "download",
+        "app",
+        "play store",
+        "android",
+        "google"
+      ],
+      "note": "This icon's color cannot be changed. Default color can be used.",
+      "category": "logo"
+    },
+    {
       "name": "ball-fire",
       "file": "ball-fire.svg",
-      "addedDate": "2025-12-23"
+      "addedDate": "2025-12-23",
+      "addedTs": 1766494323000,
+      "oldClasses": [],
+      "oldColors": [
+        {
+          "value": "rgba(0, 0, 0, 0.54)",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "ball",
+        "pace",
+        "fast",
+        "bowling"
+      ],
+      "note": null,
+      "category": "cricket"
     },
     {
       "name": "ball-moving",
       "file": "ball-moving.svg",
-      "addedDate": "2025-12-23"
+      "addedDate": "2025-12-23",
+      "addedTs": 1766494323000,
+      "oldClasses": [],
+      "oldColors": [
+        {
+          "value": "rgba(0, 0, 0, 0.54)",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "ball",
+        "pace",
+        "medium fast",
+        "bowling"
+      ],
+      "note": null,
+      "category": "cricket"
     },
     {
       "name": "ball-rotate-left",
       "file": "ball-rotate-left.svg",
-      "addedDate": "2025-12-23"
+      "addedDate": "2025-12-23",
+      "addedTs": 1766494323000,
+      "oldClasses": [],
+      "oldColors": [
+        {
+          "value": "rgba(0, 0, 0, 0.54)",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "ball",
+        "leg spin",
+        "wrist spin",
+        "bowling"
+      ],
+      "note": null,
+      "category": "cricket"
     },
     {
       "name": "ball-rotate-right",
       "file": "ball-rotate-right.svg",
-      "addedDate": "2025-12-23"
+      "addedDate": "2025-12-23",
+      "addedTs": 1766494323000,
+      "oldClasses": [],
+      "oldColors": [
+        {
+          "value": "rgba(0, 0, 0, 0.54)",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "ball",
+        "off spin",
+        "orthodox",
+        "bowling"
+      ],
+      "note": null,
+      "category": "cricket"
     },
     {
       "name": "bat-lhb",
       "file": "bat-lhb.svg",
-      "addedDate": "2025-12-23"
+      "addedDate": "2025-12-23",
+      "addedTs": 1766494323000,
+      "oldClasses": [],
+      "oldColors": [
+        {
+          "value": "rgba(0, 0, 0, 0.54)",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "bat",
+        "left hand bat",
+        "batting"
+      ],
+      "note": null,
+      "category": "cricket"
     },
     {
       "name": "bat-rhb",
       "file": "bat-rhb.svg",
-      "addedDate": "2025-12-23"
+      "addedDate": "2025-12-23",
+      "addedTs": 1766494323000,
+      "oldClasses": [],
+      "oldColors": [
+        {
+          "value": "rgba(0, 0, 0, 0.54)",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "bat",
+        "right hand bat",
+        "batting"
+      ],
+      "note": null,
+      "category": "cricket"
     },
     {
       "name": "copy",
       "file": "copy.svg",
-      "addedDate": "2025-12-23"
+      "addedDate": "2025-12-23",
+      "addedTs": 1766494323000,
+      "oldClasses": [
+        "cbCopyClipboardIco"
+      ],
+      "oldColors": [
+        {
+          "value": "#0579BC",
+          "label": "default"
+        },
+        {
+          "value": "#5797BC",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "clone",
+        "duplicate"
+      ],
+      "note": null,
+      "category": "interface"
     },
     {
       "name": "arrow-drop-down",
       "file": "arrow-drop-down.svg",
-      "addedDate": "2025-12-01"
+      "addedDate": "2025-12-01",
+      "addedTs": 1764586028000,
+      "oldClasses": [
+        "cbDownCarret",
+        "cbDrpDwnDrkIco",
+        "cbCrtIcnRed"
+      ],
+      "oldColors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        },
+        {
+          "value": "#E90B37",
+          "label": "red"
+        }
+      ],
+      "keywords": [
+        "caret",
+        "down",
+        "direction",
+        "arrow",
+        "south"
+      ],
+      "note": null,
+      "category": "interface"
     },
     {
       "name": "close",
       "file": "close.svg",
-      "addedDate": "2025-12-01"
+      "addedDate": "2025-12-01",
+      "addedTs": 1764586028000,
+      "oldClasses": [
+        "cbCloseIcon",
+        "cbCloseBtnGreenIcon",
+        "cbCloseRedIcon",
+        "cbCloseIcoW"
+      ],
+      "oldColors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        },
+        {
+          "value": "#07794C",
+          "label": "green"
+        },
+        {
+          "value": "#B32306",
+          "label": "red"
+        }
+      ],
+      "keywords": [
+        "cross",
+        "x",
+        "exit",
+        "dismiss"
+      ],
+      "note": null,
+      "category": "interface"
     },
     {
       "name": "emoticon-sad",
       "file": "emoticon-sad.svg",
-      "addedDate": "2025-12-01"
+      "addedDate": "2025-12-01",
+      "addedTs": 1764586028000,
+      "oldClasses": [
+        "cbErrorUnhappyFace"
+      ],
+      "oldColors": [
+        {
+          "value": "#D0D3D4",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "unhappy",
+        "sad face",
+        "frown",
+        "disappointed",
+        "no results",
+        "empty state",
+        "error"
+      ],
+      "note": null,
+      "category": "emotion"
     },
     {
       "name": "filter",
       "file": "filter.svg",
-      "addedDate": "2025-12-01"
+      "addedDate": "2025-12-01",
+      "addedTs": 1764586028000,
+      "oldClasses": [
+        "cbQualityIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        }
+      ],
+      "keywords": [
+        "quality",
+        "filter",
+        "slider",
+        "settings",
+        "controls"
+      ],
+      "note": null,
+      "category": "interface"
     },
     {
       "name": "info",
       "file": "info.svg",
-      "addedDate": "2025-12-01"
+      "addedDate": "2025-12-01",
+      "addedTs": 1764586028000,
+      "oldClasses": [
+        "cbInfoCircleIcon",
+        "cbAboutIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "rgba(0, 0, 0, 0.54)",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "info",
+        "details",
+        "help",
+        "about"
+      ],
+      "note": null,
+      "category": "interface"
     },
     {
       "name": "sort",
       "file": "sort.svg",
-      "addedDate": "2025-12-01"
+      "addedDate": "2025-12-01",
+      "addedTs": 1764586028000,
+      "oldClasses": [
+        "cbSortGreenIcon",
+        "cbSortIcon"
+      ],
+      "oldColors": [
+        {
+          "value": "#07794C",
+          "label": "green"
+        },
+        {
+          "value": "#464646",
+          "label": "default"
+        }
+      ],
+      "keywords": [
+        "sort",
+        "swap"
+      ],
+      "note": null,
+      "category": "interface"
     }
   ]
 }

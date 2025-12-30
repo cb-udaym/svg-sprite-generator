@@ -13,7 +13,37 @@ const OUT_DIR = path.join(__dirname, 'sprite');
 const OUT_FILE = path.join(OUT_DIR, 'sprite.svg');
 const JSON_OUT_DIR = path.join(__dirname, 'sprite');         // keep alongside sprite.svg
 const JSON_OUT_FILE = path.join(JSON_OUT_DIR, 'icons.json'); // sprite/icons.json
+const CONFIG_DIR = path.join(__dirname, "config");
 
+const SKIP_OPT_FILE = path.join(CONFIG_DIR, "skip-optimize.json");
+const META_FILE = path.join(CONFIG_DIR, "icon-meta.json");
+
+
+function loadSkipList() {
+  try {
+    const list = fs.readJsonSync(SKIP_OPT_FILE);
+    return new Set(list.map(s => s.toLowerCase()));
+  } catch {
+    return new Set();
+  }
+}
+
+function loadSkipColorSet() {
+  try {
+    const list = fs.readJsonSync(SKIP_OPT_FILE);
+    return new Set(list.map(f => f.replace(/\.svg$/i, "").toLowerCase()));
+  } catch {
+    return new Set();
+  }
+}
+
+function loadMeta() {
+  try {
+    return fs.readJsonSync(META_FILE);
+  } catch {
+    return {};
+  }
+}
 
 // Prefer git “first added” date. Falls back to filesystem mtime.
 function getAddedDate(absPath) {
@@ -24,6 +54,28 @@ function getAddedDate(absPath) {
   } catch {}
   const stat = fs.statSync(absPath);
   return new Date(stat.mtime).toISOString().slice(0, 10);
+}
+function getAddedMeta(absPath) {
+  try {
+    // Get oldest commit date/time for file (first introduction)
+    // %aI gives strict ISO 8601 (includes time + timezone)
+    const cmd = `git log --diff-filter=A --follow --format=%aI -- "${absPath}" | tail -n 1`;
+    const iso = execSync(cmd, { stdio: ["ignore", "pipe", "ignore"] })
+      .toString()
+      .trim();
+
+    if (iso) {
+      const ts = new Date(iso).getTime();          // epoch ms
+      const date = iso.slice(0, 10);               // YYYY-MM-DD
+      return { addedDate: date, addedTs: ts };
+    }
+  } catch {}
+
+  // fallback to file mtime
+  const stat = fs.statSync(absPath);
+  const ts = stat.mtime.getTime();
+  const date = new Date(ts).toISOString().slice(0, 10);
+  return { addedDate: date, addedTs: ts };
 }
 
 // If you want icon names to include folders: "actions/close".
@@ -36,16 +88,40 @@ function iconNameFromRelPath(rel) {
 async function generateIconsJson() {
   // find all svg files in original INPUT_DIR (not temp)
   const files = await fg('**/*.svg', { cwd: INPUT_DIR, dot: false });
+  const meta = loadMeta();
 
-  const icons = files.map((rel) => {
+
+   const icons = files.map((rel) => {
     const abs = path.join(INPUT_DIR, rel);
+    const name = iconNameFromRelPath(rel); // e.g. "close" or "actions/close"
+    const m = meta[name] || {};
+    const { addedDate, addedTs } = getAddedMeta(abs);
+
     return {
-      name: iconNameFromRelPath(rel), // e.g. "close" or "actions/close"
-      file: rel.replace(/\\/g, "/"),  // relative path within INPUT_DIR
-      addedDate: getAddedDate(abs)    // YYYY-MM-DD
+      name,
+      file: rel.replace(/\\/g, "/"), // relative path within INPUT_DIR
+      addedDate: addedDate, // YYYY-MM-DD,
+      addedTs: addedTs,     // epoch ms for sorting
+
+      // merged meta (normalize to always-array)
+      oldClasses: Array.isArray(m.oldClasses)
+        ? m.oldClasses
+        : (m.oldClasses ? [m.oldClasses] : []),
+
+      oldColors: Array.isArray(m.oldColors)
+        ? m.oldColors.map(c => typeof c === "string" ? ({ value: c }) : c)
+        : [],
+      
+      keywords: Array.isArray(m.keywords)
+        ? m.keywords
+        : (m.keywords ? [m.keywords] : []),
+
+      note: m.note || null,
+      category: m.category || null
     };
   })
-  .sort((a, b) => b.addedDate.localeCompare(a.addedDate) || a.name.localeCompare(b.name));
+.sort((a, b) => b.addedTs - a.addedTs || a.name.localeCompare(b.name));
+
 
   await fs.ensureDir(JSON_OUT_DIR);
   await fs.writeJson(JSON_OUT_FILE, {
@@ -88,6 +164,8 @@ async function optimizeAll() {
   await fs.remove(TEMP_DIR);
   await fs.ensureDir(TEMP_DIR);
 
+  const skipSet = loadSkipList();
+
   // find all svg files in icons folder (recursive)
   const files = await fg('**/*.svg', { cwd: INPUT_DIR, dot: false });
 
@@ -96,8 +174,18 @@ async function optimizeAll() {
     const outPath = path.join(TEMP_DIR, rel);
     await fs.ensureDir(path.dirname(outPath));
     const svg = await fs.readFile(srcPath, 'utf8');
-    const optimized = svgoOptimize(svg, srcPath);
-    await fs.writeFile(outPath, optimized, 'utf8');
+
+    const shouldSkip = skipSet.has(path.basename(rel).toLowerCase());
+
+    if (shouldSkip) {
+      // Copy as-is (no optimization)
+      await fs.writeFile(outPath, svg, "utf8");
+      console.log(`⏭️  Skipped optimization: ${rel}`);
+    } else {
+      // Optimize normally
+      const optimized = svgoOptimize(svg, srcPath);
+      await fs.writeFile(outPath, optimized, 'utf8');
+    }
   }
 }
 
@@ -145,6 +233,8 @@ async function createSprite() {
 // Post-process sprite.svg to convert only specific fills/strokes to currentColor,
 // but preserve contents inside <mask>...</mask>
 function replaceColorsOutsideMasks(spriteSvg) {
+    const skipColorSet = loadSkipColorSet();
+
   // 1) extract mask blocks and replace with placeholders
   const maskRegex = /<mask\b[\s\S]*?<\/mask>/gi;
   const masks = [];
@@ -158,11 +248,22 @@ function replaceColorsOutsideMasks(spriteSvg) {
   // 2) replace targeted fill/stroke values outside masks
   // This will only replace black values and common black forms
   // adjust the regex if you want to include more colors
-  spriteWithPlaceholders = spriteWithPlaceholders
-    // fill="#000" | fill="#000000" | fill="black" (case-insensitive)
-    .replace(/fill="(#000000|#000|black)"/gi, 'fill="currentColor"')
-    // stroke similarly
-    .replace(/stroke="(#000000|#000|black)"/gi, 'stroke="currentColor"');
+
+    // Process each symbol separately
+  spriteWithPlaceholders = spriteWithPlaceholders.replace(
+    /<symbol\b[^>]*\bid="([^"]+)"[^>]*>[\s\S]*?<\/symbol>/gi,
+    (symbolBlock, id) => {
+      const idLower = id.toLowerCase();
+
+      // if in skip set -> return unchanged symbol block
+      if (skipColorSet.has(idLower)) return symbolBlock;
+
+      // else apply currentColor replacement only inside this symbol
+      return symbolBlock
+        .replace(/fill="(#000000|#000|black)"/gi, 'fill="currentColor"')
+        .replace(/stroke="(#000000|#000|black)"/gi, 'stroke="currentColor"');
+    }
+  );
 
   // 3) restore mask blocks back
   // placeholder pattern: ___SVG_MASK_PLACEHOLDER___<index>___

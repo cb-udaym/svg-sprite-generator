@@ -11,13 +11,16 @@
     input { padding:10px 12px; border:1px solid #ddd; border-radius:10px; min-width:100%; }
     h2 { margin:24px 0 10px; font-size:14px; }
     .grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(300px,1fr)); gap:12px; }
-    .card { border:1px solid #eee; border-radius:14px; padding:12px; display:flex; gap:10px; background-color: white;}
-    .iconBox { width:50px; height:50px; border:1px solid #f0f0f0; border-radius:12px; display:grid; place-items:center; }
+    .card { border:1px solid #eee; border-radius:14px; padding:12px; display:flex; gap:10px; background-color: white; position: relative;}
+    .iconBox { width:50px; height:50px; border:1px solid #f0f0f0; border-radius:12px; display:grid; place-items:center; cursor: pointer; }
+    .iconBox:hover { background-color: #000000; color: #ffffff; }
     .iconBox svg { width:30px; height:30px; }
+    .iconBox.big { width:100%; height:150px; }
+    .iconBox.big svg { width:80%; height:120px; }
     .name { font-weight:600; font-size:13px;display: flex; align-items: center; gap: 4px; }
-    .code { font-family: ui-monospace; font-size:12px; color:#333; margin-top:4px; word-break:break-word; display: none; }
+    .code { font-family: ui-monospace, monospace; font-size:12px; color:#333; margin-top:4px; word-break:break-word; display: none; }
     button { margin-top:8px; margin-right:8px; border:1px solid #ddd; background:#fff; padding:4px 10px; border-radius:6px; cursor:pointer; font-size:10px; }
-    .toast { position:fixed; bottom:18px; left:50%; transform:translateX(-50%); background:#111; color:#fff; padding:10px 12px; border-radius:12px; opacity:0; transition:.2s; pointer-events:none; }
+    .toast { position:fixed; bottom:18px; left:50%; transform:translateX(-50%); background:#111; color:#fff; padding:10px 12px; border-radius:12px; opacity:0; transition:.2s; pointer-events:none; z-index: 10000;}
     .toast.show { opacity:1; }
     @media (max-width: 880px) {
         header {
@@ -47,10 +50,66 @@
   /* Basic markdown styling */
   .modal__body h1, .modal__body h2, .modal__body h3 { margin: 16px 0 8px; }
   .modal__body p { margin: 8px 0; line-height: 1.5; }
-  .modal__body code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas; background:#f6f6f6; padding:2px 4px; border-radius:6px; }
+  .modal__body code { font-family: ui-monospace, monospace, SFMono-Regular, Menlo, Monaco, Consolas; background:#f6f6f6; padding:2px 4px; border-radius:6px; font-size: .8rem; }
   .modal__body pre { background:#f6f6f6; padding:12px; border-radius:12px; overflow:auto; }
   .modal__body a { color: #0b57d0; }
   .modal__body ul { padding-left: 20px; }
+
+  .drawer { position: fixed; inset:0; display:none; z-index:9999; }
+.drawer.is-open { display:block; }
+.drawer__backdrop { position:absolute; inset:0; background: rgba(0,0,0,.45); }
+.drawer__panel {
+  position:absolute; top:0; right:0;
+  height:100%;
+  width:min(460px, 92vw);
+  background:#fff;
+  box-shadow: -10px 0 30px rgba(0,0,0,.2);
+  display:flex;
+  flex-direction:column;
+}
+.drawer__header { padding:14px 16px; border-bottom:1px solid #eee; display:flex; align-items:center; justify-content:space-between; gap:10px; }
+.drawer__title { font-weight:700; font-size:15px; }
+.drawer__subtitle { color:#666; font-size:12px; margin-top:2px; }
+.drawer__close { border:1px solid #ddd; background:#fff; border-radius:10px; padding:6px 10px; cursor:pointer; }
+.drawer__body { padding:16px; overflow:auto; }
+.chips { display:flex; gap:8px; flex-wrap:wrap; margin-top:8px; }
+.chip { border:1px solid #ddd; padding:6px 28px 6px 10px; border-radius:999px; font-size:12px; cursor:pointer; background:#fff; position: relative; }
+.chip:hover { background:#f7f7f7; }
+.kv { margin-top:24px; }
+.kv .label { font-size:12px; color:#666; margin-bottom:4px; }
+.kv button { margin-top:8px; }
+
+.kv .value {
+  position: relative;
+  font-family: ui-monospace, monospace, SFMono-Regular, Menlo, Monaco, Consolas;
+  font-size: 12px;
+  background: #f6f6f6;
+  padding: 10px 36px 10px 10px; /* extra right padding for icon */
+  border-radius: 12px;
+  word-break: break-word;
+}
+
+.copyIcon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.copyIcon:hover { opacity: 1; }
+.infoIcon { 
+  cursor: pointer;position: absolute;right: 10px;top: 8px;color: #868686;display: none;
+}
+.card:hover > .infoIcon { display: block; }
+
+.kw{
+  color: #636363;
+    text-transform: uppercase;
+    font-size: .75rem;
+    margin-top: 8px;
+}
   </style>
 </head>
 <body>
@@ -61,7 +120,7 @@
         <input id="search" placeholder="Search icons…" />
     </div>
     <div style="flex: 1 1 0%;display: flex;align-items: center;justify-content: end;gap: 8px;">
-        <button id="downloadSprite" style="font-size: 16px;font-weight: 500;margin:0;padding: 8px 16px;;">Download latest sprite</button>
+        <button id="downloadSprite" style=" font-size: 16px;font-weight: 500;margin:0;padding: 8px 16px;background: black;color: white;border: 4px dashed #f7f7f7;">Download latest sprite</button>
         <svg id="infoBtn" style="cursor: pointer;" width="18" height="18" aria-hidden="true"><use href="sprite/sprite.svg#info"></use></svg>
     </div>
 </header>
@@ -76,7 +135,7 @@
   <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="infoTitle">
     <div class="modal__header">
       <h2 id="infoTitle">Guidelines for SVG sprites</h2>
-      <button class="modal__close" onclick="closeModal()" type="button" data-close="1" aria-label="Close"><svg width="12" height="12" aria-hidden="true"><use href="sprite/sprite.svg#close"></use></svg></button>
+      <button class="modal__close" onclick="closeModal()" type="button" data-close="1" aria-label="Close"><svg width="12" height="12" style="cursor: pointer;border: 1px solid #ddd;padding: 6px;border-radius: 6px;" aria-hidden="true"><use href="sprite/sprite.svg#close"></use></svg></button>
     </div>
 
     <div id="infoBody" class="modal__body">
@@ -84,6 +143,22 @@
     </div>
   </div>
 </div>
+
+<div id="drawer" class="drawer" aria-hidden="true">
+  <div class="drawer__backdrop" data-close="1"></div>
+  <div class="drawer__panel">
+    <div class="drawer__header">
+      <div>
+        <div id="drawerTitle" class="drawer__title"></div>
+        <div id="drawerSubtitle" class="drawer__subtitle"></div>
+      </div>
+      <svg width="12" height="12" data-close="1" aria-hidden="true" style="cursor: pointer;cursor: pointer;border: 1px solid #ddd;padding: 6px;border-radius: 6px;"><use href="sprite/sprite.svg#close"></use></svg>
+    </div>
+
+    <div id="drawerBody" class="drawer__body"></div>
+  </div>
+</div>
+
 
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
@@ -134,8 +209,24 @@
     return s.replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;");
   }
 
+function matchesQuery(icon, q) {
+  if (!q) return true;
+
+  const tokens = [
+    icon.name,
+    ...(icon.oldClasses || []),
+    ...(icon.keywords || []),
+    icon.category ? icon.category : null,
+  ]
+  .filter(Boolean)
+  .join(" ")
+  .toLowerCase();
+
+  return tokens.includes(q);
+}
+
   function render() {
-    const icons = data.icons.filter(i => i.name.toLowerCase().includes(q));
+    const icons = data.icons.filter(i => matchesQuery(i, q));
     const grouped = groupByDate(icons);
 
     app.innerHTML = grouped.map(([date, arr]) => `
@@ -144,7 +235,8 @@
         <div class="grid">
           ${arr.map(i => `
             <div class="card">
-              <div class="iconBox">
+              <svg class="infoIcon" data-open="${i.name}" width="18" height="18" aria-hidden="true"><use href="sprite/sprite.svg#info"></use></svg>
+              <div class="iconBox" data-open="${i.name}">
                 <svg aria-hidden="true"><use href="${data.spritePath}#${i.name}"></use></svg>
               </div>
               <div style="min-width:0">
@@ -244,12 +336,12 @@ document.getElementById("downloadSprite").addEventListener("click", async () => 
     body.textContent = "Loading…";
     try {
       // adjust path if needed: "../readme.md" etc.
-      const res = await fetch("modal.md", { cache: "no-store" });
+      const res = await fetch("read-modal.md", { cache: "no-store" });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const md = await res.text();
       body.innerHTML = marked.parse(md);
     } catch (err) {
-      body.innerHTML = `<p>Could not load <code>modal.md</code>.</p><pre>${String(err)}</pre>`;
+      body.innerHTML = `<p>Could not load <code>read-modal.md</code>.</p><pre>${String(err)}</pre>`;
     }
   }
 
@@ -261,6 +353,164 @@ document.getElementById("downloadSprite").addEventListener("click", async () => 
   modal.addEventListener("click", (e) => {
     if (e.target?.dataset?.close) closeModal();
   });
+
+  const drawer = document.getElementById("drawer");
+const drawerTitle = document.getElementById("drawerTitle");
+const drawerSubtitle = document.getElementById("drawerSubtitle");
+const drawerBody = document.getElementById("drawerBody");
+
+function openDrawer(icon) {
+  drawer.classList.add("is-open");
+  drawer.setAttribute("aria-hidden", "false");
+
+  drawerTitle.textContent = icon.name;
+  drawerSubtitle.textContent = `Added: ${formatDate(icon.addedDate)}`;
+
+  const use = snippet(icon.name);
+
+  const oldClassesHtml = icon.oldClasses?.length
+  ? `
+    <div class="kv">
+      <div class="label">Old class name(s)</div>
+      <div class="chips">
+        ${icon.oldClasses.map(c => `<span class="chip" data-copy="${c}">${c}<svg class="copyIcon" style="width:12px;height:12px;top:7px;right:10px;" aria-hidden="true"><use href="sprite/sprite.svg#copy"></use></svg></span>`).join("")}
+      </div>
+    </div>
+  `
+  : "";
+
+  const oldColorsHtml = icon.oldColors?.length
+  ? `
+    <div class="kv">
+      <div class="label">Colors</div>
+      <div class="chips">
+        ${icon.oldColors.map(c => {
+          const label = c.label ? `${c.label}` : "default";
+          return `<span class="chip" data-copy="${c.value}"><span style="width: 24px;height: 8px;display: inline-block;background: ${c.value};border:0.5px solid #cfcfcf;border-radius: 6px;margin-right: 4px;"></span>${label}<svg class="copyIcon" style="width:12px;height:12px;top:7px;right:10px;" aria-hidden="true"><use href="sprite/sprite.svg#copy"></use></svg></span>`;
+        }).join("")}
+      </div>
+    </div>
+  `
+  : "";
+
+  const keywordsHtml = icon.keywords?.length
+  ? `
+    <div class="kv">
+      <div class="label">Tags</div>
+      <div class="kw">
+        ${icon.keywords.map(k => `${k}`).join(" • ")}
+      </div>
+    </div>
+  `
+  : "";
+  
+  const categoryHtml = icon.category
+  ? `
+    <div class="kv">
+      <div class="label">Category</div>
+      <div class="kw">
+        ${icon.category}
+      </div>
+    </div>
+  `
+  : "";
+
+  drawerBody.innerHTML = `
+    <div style="display:flex;align-items:center;gap:12px;">
+      <div class="iconBox big"><svg><use href="${data.spritePath}#${icon.name}"></use></svg></div>
+    </div>
+
+    <div class="kv">
+      <div class="label">SVG name</div>
+      <div class="value">
+        ${escapeHtml(icon.name)}
+        <svg class="copyIcon" data-copy-name="${icon.name}" aria-hidden="true">
+          <use href="sprite/sprite.svg#copy"></use>
+        </svg>
+      </div>
+    </div>
+
+    <div class="kv">
+      <div class="label">&lt;use&gt; snippet</div>
+      <div class="value">
+        ${escapeHtml(use)}
+        <svg class="copyIcon" data-copy-snippet="${icon.name}" aria-hidden="true">
+          <use href="sprite/sprite.svg#copy"></use>
+        </svg>
+      </div>
+    </div>
+    
+    ${icon.note ? `
+      <div class="kv">
+        <div class="label">Note</div>
+        <div style="font-size:12px;">${icon.note}</div>
+      </div>
+    ` : ""}
+
+    
+    ${oldColorsHtml}
+    
+    ${keywordsHtml}
+    
+    ${categoryHtml}
+    
+    ${oldClassesHtml}
+  `;
+
+  drawerBody.querySelectorAll("[data-copy-color]").forEach(el => {
+    el.addEventListener("click", () => copy(el.dataset.copyColor, "Color copied"));
+  });
+  drawerBody.querySelectorAll(".chip[data-copy]").forEach(el => {
+    el.addEventListener("click", () => copy(el.dataset.copy, "Copied"));
+  });
+
+}
+
+function closeDrawer() {
+  drawer.classList.remove("is-open");
+  drawer.setAttribute("aria-hidden", "true");
+}
+
+drawer.addEventListener("click", (e) => {
+  if (e.target?.dataset?.close) closeDrawer();
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeDrawer();
+});
+
+app.addEventListener("click", (e) => {
+  const card = e.target.closest("[data-open]");
+  if (!card) return;
+
+  const name = card.dataset.open;
+  const icon = data.icons.find(i => i.name === name);
+  if (icon) openDrawer(icon);
+});
+
+
+drawerBody.addEventListener("click", (e) => {
+  const el = e.target.closest("[data-copy-name], [data-copy-snippet], [data-copy-text]");
+  if (!el) return;
+
+  e.stopPropagation();
+
+  if (el.dataset.copyName) {
+    copy(el.dataset.copyName, "SVG name copied");
+    return;
+  }
+
+  if (el.dataset.copySnippet) {
+    copy(snippet(el.dataset.copySnippet), "<use> snippet copied");
+    return;
+  }
+
+  if (el.dataset.copyText) {
+    copy(el.dataset.copyText, "Copied");
+    return;
+  }
+});
+
 </script>
 
 </body>
