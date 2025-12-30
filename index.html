@@ -461,7 +461,7 @@ function openDrawer(icon) {
     el.addEventListener("click", () => copy(el.dataset.copyColor, "Color copied"));
   });
   drawerBody.querySelectorAll(".chip[data-copy]").forEach(el => {
-    el.addEventListener("click", () => copy(el.dataset.copy, "Copied"));
+    el.addEventListener("click", () => copy(el.dataset.copy, el.dataset.copy + " - Copied"));
   });
 
 }
