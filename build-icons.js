@@ -1,5 +1,5 @@
-// build-sprite.js
-// Usage: node build-sprite.js
+// build-icons.js
+// Usage: npm run build-icons.js
 const fs = require('fs-extra');
 const path = require('path');
 const fg = require('fast-glob');
@@ -7,7 +7,7 @@ const { optimize } = require('svgo');
 const { execSync } = require("child_process");
 const Sprite = require('svg-sprite');
 
-const INPUT_DIR = path.join(__dirname, 'icons'); // your source icons (can have subfolders)
+const INPUT_DIR = path.join(__dirname, 'icons'); // your source icons
 const TEMP_DIR = path.join(__dirname, 'temp-optimized');
 const OUT_DIR = path.join(__dirname, 'sprite');
 const OUT_FILE = path.join(OUT_DIR, 'sprite.svg');
@@ -108,8 +108,8 @@ async function generateIconsJson() {
         ? m.oldClasses
         : (m.oldClasses ? [m.oldClasses] : []),
 
-      oldColors: Array.isArray(m.oldColors)
-        ? m.oldColors.map(c => typeof c === "string" ? ({ value: c }) : c)
+      colors: Array.isArray(m.colors)
+        ? m.colors.map(c => typeof c === "string" ? ({ value: c }) : c)
         : [],
       
       keywords: Array.isArray(m.keywords)

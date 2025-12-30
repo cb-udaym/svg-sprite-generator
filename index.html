@@ -379,12 +379,12 @@ function openDrawer(icon) {
   `
   : "";
 
-  const oldColorsHtml = icon.oldColors?.length
+  const colorsHtml = icon.colors?.length
   ? `
     <div class="kv">
       <div class="label">Colors</div>
       <div class="chips">
-        ${icon.oldColors.map(c => {
+        ${icon.colors.map(c => {
           const label = c.label ? `${c.label}` : "default";
           return `<span class="chip" data-copy="${c.value}"><span style="width: 24px;height: 8px;display: inline-block;background: ${c.value};border:0.5px solid #cfcfcf;border-radius: 6px;margin-right: 4px;"></span>${label}<svg class="copyIcon" style="width:12px;height:12px;top:7px;right:10px;" aria-hidden="true"><use href="sprite/sprite.svg#copy"></use></svg></span>`;
         }).join("")}
@@ -448,7 +448,7 @@ function openDrawer(icon) {
     ` : ""}
 
     
-    ${oldColorsHtml}
+    ${colorsHtml}
     
     ${keywordsHtml}
     
