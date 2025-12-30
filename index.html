@@ -255,7 +255,7 @@ function matchesQuery(icon, q) {
     `).join("");
 
     app.querySelectorAll("[data-copy-name]").forEach(b =>
-      b.onclick = () => copy(b.dataset.copyName, "Icon name copied")
+      b.onclick = () => copy(b.dataset.copyName, b.dataset.copyName + " - copied")
     );
     app.querySelectorAll("[data-copy-snippet]").forEach(b =>
       b.onclick = () => copy(snippet(b.dataset.copySnippet), "<use> snippet copied")
@@ -458,7 +458,7 @@ function openDrawer(icon) {
   `;
 
   drawerBody.querySelectorAll("[data-copy-color]").forEach(el => {
-    el.addEventListener("click", () => copy(el.dataset.copyColor, "Color copied"));
+    el.addEventListener("click", () => copy(el.dataset.copyColor, el.dataset.copyColor + " - copied"));
   });
   drawerBody.querySelectorAll(".chip[data-copy]").forEach(el => {
     el.addEventListener("click", () => copy(el.dataset.copy, el.dataset.copy + " - Copied"));
