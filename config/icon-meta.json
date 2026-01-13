@@ -3,546 +3,643 @@
         "oldClasses": ["cbAndroidIcon", "cbAndroidIconDark"],
         "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["social media", "logo", "android", "playstore", "google", "platform"],
-        "category": "social"
+        "category": "social",
+        "platforms": ["web"]
     },
     "apple-logo": {
         "oldClasses": ["cbAppleIcon", "cbIOS"],
         "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["social media", "logo", "apple", "appstore", "platform"],
-        "category": "social"
+        "category": "social",
+        "platforms": ["web"]
     },
     "arrow-drop-down": {
         "oldClasses": ["cbDownCarret", "cbDrpDwnDrkIco", "cbCrtIcnRed"],
         "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }, { "value": "#E90B37", "label": "red" }],
         "keywords": ["caret", "down", "direction", "arrow", "south"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     },
     "arrow-drop-up": {
         "oldClasses": ["cbCrtIcnGreen"],
         "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }, { "value": "#00B48A", "label": "green" }],
         "keywords": ["caret", "up", "direction", "arrow", "north"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     },
     "arrow-left": {
         "oldClasses": ["cbBackwardBlackArrow", "cbBackwardArrow"],
         "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["left", "direction", "arrow", "west"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     },
     "arrow-right": {
         "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["right", "direction", "arrow", "east"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     },
     "badge-ad": {
         "oldClasses": ["cb11SmallAdIcon"],
         "colors": [{ "value": "#000000", "label": "default" }],
         "keywords": ["ad", "bagde", "label"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     },
     "badge-percent": {
         "oldClasses": ["cbDealsIcon"],
         "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["badge", "percent", "discount", "deals", "offer"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     },
     "badge-star": {
         "oldClasses": ["cbSubcriptionIcon"],
         "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["badge", "star", "subscription", "plus"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     },
     "ball-fire": {
         "colors": [{ "value": "rgba(0, 0, 0, 0.54)", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["ball", "pace", "fast", "bowling"],
-        "category": "cricket"
+        "category": "cricket",
+        "platforms": ["android", "ios", "web"]
     },
     "ball-moving": {
         "colors": [{ "value": "rgba(0, 0, 0, 0.54)", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["ball", "pace", "medium fast", "bowling"],
-        "category": "cricket"
+        "category": "cricket",
+        "platforms": ["android", "ios", "web"]
     },
     "ball-rotate-left": {
         "colors": [{ "value": "rgba(0, 0, 0, 0.54)", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["ball", "leg spin", "wrist spin", "bowling"],
-        "category": "cricket"
+        "category": "cricket",
+        "platforms": ["android", "ios", "web"]
     },
     "ball-rotate-right": {
         "colors": [{ "value": "rgba(0, 0, 0, 0.54)", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["ball", "off spin", "orthodox", "bowling"],
-        "category": "cricket"
+        "category": "cricket",
+        "platforms": ["android", "ios", "web"]
     },
     "bat-lhb": {
         "colors": [{ "value": "rgba(0, 0, 0, 0.54)", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["bat", "left hand bat", "batting"],
-        "category": "cricket"
+        "category": "cricket",
+        "platforms": ["android", "ios", "web"]
     },
     "bat-rhb": {
         "colors": [{ "value": "rgba(0, 0, 0, 0.54)", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["bat", "right hand bat", "batting"],
-        "category": "cricket"
+        "category": "cricket",
+        "platforms": ["android", "ios", "web"]
     },
     "briefcase": {
         "oldClasses": ["cbResumeIcon"],
         "colors": [{ "value": "rgba(0, 0, 0, 0.54)", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["resume", "job", "suitcase", "work", "bag"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     },
     "calendar": {
         "oldClasses": ["cbScheduleIcon"],
         "colors": [{ "value": "rgba(0, 0, 0, 0.54)", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["calendar", "schedule", "day", "month"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     },
     "cb11-icon-ad-colored": {
         "oldClasses": ["cb11AdIcon"],
         "keywords": ["cricbuzz11", "11", "eleven", "logo", "ad", "fantasy"],
         "category": "logo",
-        "note": "This icon's color cannot be changed. Default color can be used."
+        "platforms": ["android", "ios", "web"],
+        "note": "This icon's color cannot be changed. Default color can be used.",
+        "baseSize": [54, 36]
     },
     "cb11-icon-colored": {
         "oldClasses": ["cb11Icon"],
         "keywords": ["cricbuzz11", "11", "eleven", "logo", "fantasy"],
         "category": "logo",
-        "note": "This icon's color cannot be changed. Default color can be used."
+        "platforms": ["android", "ios", "web"],
+        "note": "This icon's color cannot be changed. Default color can be used.",
+        "baseSize": [54, 36]
     },
     "check": {
         "oldClasses": ["cbRight", "cbTickIcoW", "cbRightIcon", "cbGreenRightTick", "cbRightTick", "cbIcoSuccess"],
         "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }, { "value": "#00B48A", "label": "green" }],
         "keywords": ["done", "tick", "right", "complete", "task"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     },
     "chevron-down": {
         "oldClasses": ["cbArrowDownIcon", "cbDownArrowIcon"],
         "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["arrow", "direction", "down", "south"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     },
     "chevron-left": {
         "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["arrow", "direction", "left", "west"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     },
     "chevron-right": {
         "oldClasses": ["cbCrtIcn", "cbCrtIcnDark", "cbMoreRightIconDark"],
         "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["arrow", "direction", "right", "east"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     },
     "chevron-up": {
         "oldClasses": ["cbArrowUpIcon", "cbUpArrowIcon"],
         "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["arrow", "direction", "up", "north"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     },
     "chevrons-down": {
         "oldClasses": ["cbexpandIcon"],
         "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["arrow", "direction", "down", "south", "expand"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     },
     "chevrons-up": {
         "oldClasses": ["cbcollapseIcon"],
         "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["arrow", "direction", "up", "north", "collapse"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     },
     "circle-close": {
         "oldClasses": ["cbClearInputIcoB", "cbCrossButtonCircularDark", "cbCrossButtonCircular", "cbCloseGreenIcon"],
         "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["cancel", "close", "remove", "times", "clear", "cross"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web", "tv"]
     },
     "circle-minus": {
         "oldClasses": ["cbDelAccIcoB", "cbDelAccIcoW"],
         "colors": [{ "value": "#E90B37", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["delete", "minus", "subtract", "remove"],
-        "category": "account and payments"
+        "category": "account and payments",
+        "platforms": ["android", "ios", "web"]
     },
     "circle-play": {
         "oldClasses": ["cbVideoIconDark", "cbVideoIconBlack", "cbVideoIcon"],
         "colors": [{ "value": "rgba(0, 0, 0, 0.54)", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }, { "value": "#000000", "label": "black" }],
         "keywords": ["videos", "play", "start", "run"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     },
     "circle-question-mark": {
         "oldClasses": ["cbGetSupportIcoB", "cbGetSupportIcoW"],
         "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["support", "question mark", "help"],
-        "category": "account and payments"
+        "category": "account and payments",
+        "platforms": ["android", "ios", "web"]
     },
     "circle-user": {
         "oldClasses": ["cbProfileIcoB", "cbProfileIcoW", "cbPflIcn"],
         "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["person", "user", "account"],
-        "category": "account and payments"
+        "category": "account and payments",
+        "platforms": ["android", "ios", "web", "tv"]
     },
     "clipboard": {
         "oldClasses": ["cbPasteClipboardIco", "cbPaste"],
         "colors": [{ "value": "#0579BC", "label": "default" }, { "value": "#5797BC", "label": "onDarkBgs" }],
         "keywords": ["copy", "paste"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     },
     "close": {
         "oldClasses": ["cbCloseIcon", "cbCloseBtnGreenIcon", "cbCloseRedIcon", "cbCloseIcoW"],
         "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }, { "value": "#07794C", "label": "green" }, { "value": "#B32306", "label": "red" }],
         "keywords": ["cross", "x", "exit", "dismiss"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web", "tv"]
     },
     "copy": {
         "oldClasses": ["cbCopyClipboardIco"],
         "colors": [{ "value": "#0579BC", "label": "default" }, { "value": "#5797BC", "label": "onDarkBgs" }],
         "keywords": ["clone", "duplicate"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     },
     "credit-card": {
         "oldClasses": ["cbPymntCardIcoB", "cbPymntCardIcoW"],
         "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["payment", "credit card", "bank", "purchase", "cc"],
-        "category": "account and payments"
+        "category": "account and payments",
+        "platforms": ["android", "ios", "web"]
     },
     "cricbuzz-11-icon": {
         "oldClasses": ["cb11BlackIcon", "cb11Banner"],
         "colors": [{ "value": "#000000", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["cricbuzz11", "11", "eleven", "logo", "fantasy"],
-        "category": "logo"
+        "category": "logo",
+        "platforms": ["android", "ios", "web"],
+        "baseSize": [54, 36]
     },
     "cricbuzz-11-logo": {
         "oldClasses": ["cb11FullNameIcon"],
         "colors": [{ "value": "#FFFFFF", "label": "default" }],
         "keywords": ["cricbuzz11", "11", "eleven", "logo", "fantasy"],
+        "platforms": ["web"],
         "category": "logo"
     },
     "cricbuzz-logo": {
         "oldClasses": ["cblogo", "cbLogoSvg"],
         "colors": [{ "value": "#FFFFFF", "label": "default" }],
         "keywords": ["cricbuzz", "logo"],
-        "category": "logo"
+        "category": "logo",
+        "platforms": ["android", "ios", "web", "tv"],
+        "baseSize": [94, 30]
     },
     "willow-by-cricbuzz-logo": {
         "colors": [{ "value": "#FFFFFF", "label": "default" }],
         "keywords": ["willow by cricbuzz", "logo"],
-        "category": "logo"
+        "category": "logo",
+        "platforms": ["android", "ios", "web", "tv"],
+        "baseSize": [94, 30]
     },
     "cricket": {
         "oldClasses": ["cbMatchIconBlack", "cbMatchIcon"],
         "colors": [{ "value": "rgba(0, 0, 0, 0.54)", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }, { "value": "#000000", "label": "black" }],
         "keywords": ["matches", "stumps", "bat", "ball", "bails"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     },
     "document": {
         "oldClasses": ["cbNewsIcoW", "cbTermsofUse", "cbPlusNewsIcoB", "cbNewsIconBlack", "cbNewsIcon"],
         "colors": [{ "value": "rgba(0, 0, 0, 0.54)", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }, { "value": "#000000", "label": "black" }],
         "keywords": ["news", "article", "editorial"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     },
     "dotted-arrow-down": {
         "oldClasses": ["cbPlayerOut", "cbRankDownIcon"],
         "colors": [{ "value": "#F56783", "label": "default" }],
         "keywords": ["arrow", "direction", "down", "south"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     },
     "dotted-arrow-up": {
         "oldClasses": ["cbPlayerIn", "cbRankUpIcon"],
         "colors": [{ "value": "#00B48A", "label": "default" }],
         "keywords": ["arrow", "direction", "up", "north"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     },
     "download-app-store": {
         "oldClasses": ["cbAppStoreIcon"],
         "keywords": ["download", "app", "appstore", "apple"],
         "category": "logo",
+        "platforms": ["web"],
         "note": "This icon's color cannot be changed. Default color can be used."
     },
     "download-play-store": {
         "oldClasses": ["cbGooglePlayIcon"],
         "keywords": ["download", "app", "play store", "android", "google"],
         "category": "logo",
+        "platforms": ["web"],
         "note": "This icon's color cannot be changed. Default color can be used."
     },
     "ellipsis-vertical": {
         "oldClasses": ["cbVerticalMenu", "cbMoreIconBlack", "cbMoreIcon"],
         "colors": [{ "value": "rgba(0, 0, 0, 0.54)", "label": "default" }, { "value": "#000000", "label": "black" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["menu", "options", "more", "dots", "..."],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web", "tv"]
     },
     "emoticon-sad": {
         "oldClasses": ["cbErrorUnhappyFace"],
         "colors": [{ "value": "#D0D3D4", "label": "onDarkBgs" }],
         "keywords": ["unhappy", "sad face", "frown", "disappointed", "no results", "empty state", "error"],
-        "category": "emotion"
+        "category": "emotion",
+        "platforms": ["android", "ios", "web", "tv"]
     },
     "external-link": {
         "oldClasses": ["cbExternalNavIcon", "cbBtnLinkRedirectIco"],
         "colors": [{ "value": "#FFFFFF", "label": "white" }, { "value": "#0579BC", "label": "blue" }, { "value": "#5797BC", "label": "onDarkBgs" }],
         "keywords": ["redirect", "link", "navigate", "external", "arrow"],
-        "category": "navigation"
+        "category": "navigation",
+        "platforms": ["android", "ios", "web"]
     },
     "filter": {
         "oldClasses": ["cbQualityIcon"],
         "colors": [{ "value": "#464646", "label": "default" }],
         "keywords": ["quality", "filter", "slider", "settings", "controls"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     },
     "graph-sparkle": {
         "oldClasses": ["cbGraphIcon", "cbRecordsIcon"],
         "colors": [{ "value": "rgba(0, 0, 0, 0.54)", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["graph", "records", "trend", "stats"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     },
     "hammer": {
         "oldClasses": ["cbHammerIcon", "cbAuctionTrackerIcon"],
         "colors": [{ "value": "rgba(0, 0, 0, 0.54)", "label": "default" }, { "value": "#000000", "label": "black" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["auction", "sold", "hammer", "gavel", "..."],
-        "category": "tools"
+        "category": "tools",
+        "platforms": ["android", "ios", "web"]
     },
     "history": {
         "oldClasses": ["cbArchivesIcon"],
         "colors": [{ "value": "rgba(0, 0, 0, 0.54)", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["history", "archives", "time"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     },
     "home-filled": {
         "oldClasses": ["cbHomeIcon", "cbHomeIconBlack"],
         "colors": [{ "value": "rgba(0, 0, 0, 0.54)", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }, { "value": "#000000", "label": "black" }],
         "keywords": ["home", "index"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web", "tv"]
     },
     "image": {
         "oldClasses": ["cbImgDark", "cbImgWht", "cbPhotosIcon"],
         "colors": [{ "value": "rgba(0, 0, 0, 0.54)", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["image", "photo", "picture"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     },
     "info": {
         "oldClasses": ["cbInfoCircleIcon", "cbAboutIcon"],
         "colors": [{ "value": "rgba(0, 0, 0, 0.54)", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["info", "details", "help", "about"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web", "tv"]
     },
     "letter-w": {
         "oldClasses": ["cbWillowDarkIcon"],
         "colors": [{ "value": "rgba(0, 0, 0, 0.54)", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["willow", "icon"],
-        "category": "logo"
+        "category": "logo",
+        "platforms": ["android", "ios", "web", "tv"]
     },
     "list-video": {
         "oldClasses": ["cbListIcon", "cbPlaylistIcon"],
         "colors": [{ "value": "#FFFFFF", "label": "default" }],
         "keywords": ["music", "video", "playlist"],
-        "category": "video"
+        "category": "video",
+        "platforms": ["android", "ios", "web", "tv"]
     },
     "list": {
         "oldClasses": ["cbNewPlaylistIcon"],
         "colors": [{ "value": "rgba(0, 0, 0, 0.54)", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["list", "items", "playlist", "options"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     },
     "live-logo": {
         "oldClasses": ["cbLiveStreamIcon"],
         "colors": [{ "value": "#E90B37", "label": "default" }],
         "keywords": ["live", "video", "play"],
-        "category": "video"
+        "category": "video",
+        "platforms": ["android", "ios", "web"]
     },
     "lock": {
         "oldClasses": ["cbLockRedIcon", "cbPrivacyIconDark", "cbPrivacyIcon"],
         "colors": [{ "value": "#E90B37", "label": "red" }, { "value": "#F1637F", "label": "redOnDarkBgs" }, { "value": "#464646", "label": "white" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["lock", "password", "blocked", "secure", "unlock", "privacy"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     },
     "mail": {
         "oldClasses": ["cbEmail", "cbMailIcon"],
         "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["mail", "email", "envelope", "message"],
         "category": "interface",
+        "platforms": ["android", "ios", "web"],
         "note": "For social icons used in the share card, please add a circular bg with colors as per old sprite"
     },
     "megaphone": {
         "oldClasses": ["cbAdvertiseIcon"],
         "colors": [{ "value": "rgba(0, 0, 0, 0.54)", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["ads", "advertise", "broadcast", "announcement", "loud speaker"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     },
     "message-square-more": {
         "oldClasses": ["cbFeedbackIcon"],
         "colors": [{ "value": "rgba(0, 0, 0, 0.54)", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["message", "text", "envelope", "message", "comment", "chat", "conversation", "speech bubble"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     },
     "monitor-play": {
         "oldClasses": ["cbPlusCricbuzzOriginalsIcoB"],
         "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["CB originals", "videos"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     },
     "no-ads": {
         "oldClasses": ["cbPlusNoIntrusiveAdsIcoB"],
         "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["no ads", "ads free"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     },
     "octagon-alert": {
         "oldClasses": ["cbExclmtnIco", "cbAlertIcoW", "cbAlertIcoB", "cbExclamationIcon", "cbIcoFail"],
         "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["warning", "alert", "danger", "exclamation mark"],
         "category": "interface",
+        "platforms": ["android", "ios", "web", "tv"],
         "note": "For cbExclamationIcon in payment failure case, this icon can be used instead"
     },
     "pause": {
         "oldClasses": ["cbPlayerPauseIcon", "cbPauseIcon"],
         "colors": [{ "value": "#FFFFFF", "label": "default" }],
         "keywords": ["music", "video", "audio", "stop", "pasue"],
-        "category": "video"
+        "category": "video",
+        "platforms": ["android", "ios", "web", "tv"]
     },
     "pencil": {
         "oldClasses": ["cbEditIcoB", "cbEditText"],
         "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["edit", "create", "draw", "write"],
-        "category": "account and payments"
+        "category": "account and payments",
+        "platforms": ["android", "ios", "web"]
     },
     "plane": {
         "oldClasses": ["cbOverseas"],
         "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFFB3", "label": "onDarkBgs" }],
         "keywords": ["flight", "overseas", "foreign", "aeroplane"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     },
     "play": {
         "oldClasses": ["cbPlayerPlayIcon", "cbPlayIcon", "cbPlayButtonIcon"],
         "colors": [{ "value": "#FFFFFF", "label": "default" }],
         "keywords": ["music", "video", "play", "start", "run"],
-        "category": "video"
+        "category": "video",
+        "platforms": ["android", "ios", "web", "tv"]
     },
     "playback-forward": {
         "oldClasses": ["cbPlayerSkipForward"],
         "colors": [{ "value": "#FFFFFF", "label": "default" }],
         "keywords": ["music", "video", "forward"],
-        "category": "video"
+        "category": "video",
+        "platforms": ["android", "ios", "web", "tv"]
     },
     "playback-rewind": {
         "oldClasses": ["cbPlayerSkipBackward"],
         "colors": [{ "value": "#FFFFFF", "label": "default" }],
         "keywords": ["music", "video", "rewind", "back"],
-        "category": "video"
+        "category": "video",
+        "platforms": ["android", "ios", "web", "tv"]
     },
     "plus": {
         "oldClasses": ["cbPlusSignIcon"],
         "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["plus", "add"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web", "tv"]
     },
     "power": {
         "oldClasses": ["cbSignOutIcoB", "cbSignOutIcoW"],
         "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["on", "off", "sign out", "log out"],
-        "category": "account and payments"
+        "category": "account and payments",
+        "platforms": ["android", "ios", "web", "tv"]
     },
     "replay": {
         "oldClasses": ["cbPlayerForwardIcon", "cbPlayerReplayIcon", "cbReplayIcon"],
         "colors": [{ "value": "#FFFFFF", "label": "default" }],
         "keywords": ["music", "video", "rewind", "replay", "forward", "history", "redo", "undo"],
-        "category": "video"
+        "category": "video",
+        "platforms": ["android", "ios", "web", "tv"]
     },
     "scoreboard": {
         "oldClasses": ["cbScoreCardIco"],
         "colors": [{ "value": "#FFFFFF", "label": "default" }],
         "keywords": ["scoreboard", "fantasy", "scorecard"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     },
     "scorecard-0": {
         "oldClasses": ["cb-text-0"],
         "keywords": ["score", "card", "board"],
         "category": "scoreboard",
+        "platforms": ["web"],
         "note": "This icon's color cannot be changed. Default color can be used."
     },
     "scorecard-1": {
         "oldClasses": ["cb-text-1"],
         "keywords": ["score", "card", "board"],
         "category": "scoreboard",
+        "platforms": ["web"],
         "note": "This icon's color cannot be changed. Default color can be used."
     },
     "scorecard-2": {
         "oldClasses": ["cb-text-2"],
         "keywords": ["score", "card", "board"],
         "category": "scoreboard",
+        "platforms": ["web"],
         "note": "This icon's color cannot be changed. Default color can be used."
     },
     "scorecard-3": {
         "oldClasses": ["cb-text-3"],
         "keywords": ["score", "card", "board"],
         "category": "scoreboard",
+        "platforms": ["web"],
         "note": "This icon's color cannot be changed. Default color can be used."
     },
     "scorecard-4": {
         "oldClasses": ["cb-text-4"],
         "keywords": ["score", "card", "board"],
         "category": "scoreboard",
+        "platforms": ["web"],
         "note": "This icon's color cannot be changed. Default color can be used."
     },
     "scorecard-5": {
         "oldClasses": ["cb-text-5"],
         "keywords": ["score", "card", "board"],
         "category": "scoreboard",
+        "platforms": ["web"],
         "note": "This icon's color cannot be changed. Default color can be used."
     },
     "scorecard-6": {
         "oldClasses": ["cb-text-6"],
         "keywords": ["score", "card", "board"],
         "category": "scoreboard",
+        "platforms": ["web"],
         "note": "This icon's color cannot be changed. Default color can be used."
     },
     "scorecard-7": {
         "oldClasses": ["cb-text-7"],
         "keywords": ["score", "card", "board"],
         "category": "scoreboard",
+        "platforms": ["web"],
         "note": "This icon's color cannot be changed. Default color can be used."
     },
     "scorecard-8": {
         "oldClasses": ["cb-text-8"],
         "keywords": ["score", "card", "board"],
         "category": "scoreboard",
+        "platforms": ["web"],
         "note": "This icon's color cannot be changed. Default color can be used."
     },
     "scorecard-9": {
         "oldClasses": ["cb-text-9"],
         "keywords": ["score", "card", "board"],
         "category": "scoreboard",
+        "platforms": ["web"],
         "note": "This icon's color cannot be changed. Default color can be used."
     },
     "search": {
         "oldClasses": ["cbMagnifyingGlassDark", "cbMagnifyingGlassWhite"],
         "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["search", "magnify", "glass", "find", "scan"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web", "tv"]
     },
     "share": {
         "oldClasses": ["cbShareIcon"],
         "colors": [{ "value": "rgba(0, 0, 0, 0.54)", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["share", "forward", "social"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     },
     "smartphone": {
         "oldClasses": ["cbmobile", "cbMobileIcon"],
         "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["phone", "mobile", "device"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     },
     "social-facebook": {
         "oldClasses": ["cbFacebookIcon", "cbFbIcon", "cbFbLogoB", "cbFbLogoW"],
         "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["social media", "logo", "facebook", "meta"],
         "category": "social",
+        "platforms": ["android", "ios", "web"],
         "note": "For social icons used in the share card, please add a circular bg with colors as per old sprite"
     },
     "social-instagram": {
         "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["social media", "logo", "instagram"],
-        "category": "social"
+        "category": "social",
+        "platforms": ["android", "ios", "web"]
     },
     "social-linkedin": {
         "oldClasses": ["cbLinkedinIcon"],
         "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["social media", "logo", "linkedin"],
         "category": "social",
+        "platforms": ["android", "ios", "web"],
         "note": "For social icons used in the share card, please add a circular bg with colors as per old sprite"
     },
     "social-whatsapp": {
@@ -550,6 +647,7 @@
         "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["social media", "logo", "whatsapp"],
         "category": "social",
+        "platforms": ["android", "ios", "web"],
         "note": "For social icons used in the share card, please add a circular bg with colors as per old sprite"
     },
     "social-x": {
@@ -557,102 +655,209 @@
         "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["social media", "logo", "x", "twitter"],
         "category": "social",
+        "platforms": ["android", "ios", "web"],
         "note": "For social icons used in the share card, please add a circular bg with colors as per old sprite"
     },
     "social-youtube": {
         "oldClasses": ["cbYoutubeIcon"],
         "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["social media", "logo", "youtube"],
-        "category": "social"
+        "category": "social",
+        "platforms": ["android", "ios", "web"]
     },
     "sort": {
         "oldClasses": ["cbSortGreenIcon", "cbSortIcon"],
         "colors": [{ "value": "#07794C", "label": "green" }, { "value": "#464646", "label": "default" }],
         "keywords": ["sort", "swap"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     },
     "star-filled": {
         "oldClasses": ["cbNewPremiumIcon", "cbPlusPremiumContentIcon", "cbPremiumIcon"],
         "colors": [{ "value": "rgba(0, 0, 0, 0.54)", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["bookmark", "premium", "plus", "favorite", "review", "rating"],
         "category": "interface",
+        "platforms": ["android", "ios", "web", "tv"],
         "note": "For premium icon, please add background shapes and colors as per current icon. (icon: white, circle-bg: #00B48A, rectBg: black )"
     },
     "table": {
         "oldClasses": ["cbICCWorldIcon"],
         "colors": [{ "value": "rgba(0, 0, 0, 0.54)", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["table", "points", "sheet", "ranking"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     },
     "tag": {
         "oldClasses": ["cbCouponIcoB", "cbCouponIcoW"],
         "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["label", "badge", "ticket", "coupon", "mark"],
-        "category": "account and payments"
+        "category": "account and payments",
+        "platforms": ["android", "ios", "web"]
     },
     "ticket-star": {
         "oldClasses": ["cbIcoRedeemCouponB", "cbIcoRedeemCouponW"],
         "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["coupon", "redeem", "pass", "entry", "event", "voucher"],
-        "category": "account and payments"
+        "category": "account and payments",
+        "platforms": ["android", "ios", "web"]
     },
     "trending-up-lines": {
         "oldClasses": ["cbRankingIconW", "cbRankingIconM"],
         "colors": [{ "value": "rgba(0, 0, 0, 0.54)", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["trending", "graph", "up", "ranking"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     },
     "trophy-star": {
         "oldClasses": ["cbPlusFantasyHandbookIcoB"],
         "colors": [{ "value": "#464646", "label": "default" }, { "value": "#000000", "label": "black" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["series", "winner", "cup", "award", "star", "fantasy"],
-        "category": "cricket"
+        "category": "cricket",
+        "platforms": ["android", "ios", "web"]
     },
     "trophy": {
         "oldClasses": ["cbFantasyIcon", "cbSeriesIcon", "cbSeriesIconBlack", "cbSeriesIcon", "cbTrophyWhiteIcon", "cbTrophyIcon"],
         "colors": [{ "value": "rgba(0, 0, 0, 0.54)", "label": "default" }, { "value": "#000000", "label": "black" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["series", "winner", "cup", "award"],
         "category": "cricket",
+        "platforms": ["android", "ios", "web", "tv"],
         "note": "For fantasy icon, please add the circular bg similar to old icon. (icon: #FFF175. bg: #122483)"
     },
     "tv-icon-outline": {
         "colors": [{ "value": "rgba(0, 0, 0, 0.54)", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["tv", "live tv"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web", "tv"]
     },
     "user-group": {
         "oldClasses": ["cbTeamsIcon"],
         "colors": [{ "value": "rgba(0, 0, 0, 0.54)", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["people", "users", "persons", "group", "team"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     },
     "users": {
         "oldClasses": ["cbMultipleUserIcon", "cbTeamIcon"],
         "colors": [{ "value": "rgba(0, 0, 0, 0.54)", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["people", "users", "persons", "group"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     },
     "user": {
         "oldClasses": ["cbPlayerIcon"],
         "colors": [{ "value": "rgba(0, 0, 0, 0.54)", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["people", "user", "person", "player"],
-        "category": "interface"
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     },
     "volume-1": {
         "oldClasses": ["cbAudioIcon"],
         "colors": [{ "value": "#464646", "label": "default" }],
         "keywords": ["mute", "unmute", "speaker", "music", "sound", "audio"],
-        "category": "video"
+        "category": "video",
+        "platforms": ["android", "ios", "web", "tv"]
     },
     "volume-x": {
         "colors": [{ "value": "#464646", "label": "default" }],
         "keywords": ["mute", "unmute", "speaker", "music", "sound", "audio"],
-        "category": "video"
+        "category": "video",
+        "platforms": ["android", "ios", "web", "tv"]
     },
     "voucher-digital": {
         "oldClasses": ["cbManageSubsIcoB", "cbManageSubsIcoW"],
         "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
         "keywords": ["manage", "subscription", "payment", "plan"],
-        "category": "account and payments"
+        "category": "account and payments",
+        "platforms": ["android", "ios", "web"]
+    },
+    "circle-pencil-filled": {
+        "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
+        "keywords": ["pencil", "edit", "change", "modify"],
+        "category": "account and payments",
+        "platforms": ["android", "ios"]
+    }, 
+    "tv-icon-filled": {
+        "colors": [{ "value": "#FFFFFF", "label": "default" }],
+        "keywords": ["tv", "live", "television"],
+        "category": "interface",
+        "platforms": ["tv"]
+    }, 
+    "stumps-play": {
+        "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
+        "keywords": ["pencil", "edit", "change", "modify"],
+        "category": "cricket",
+        "platforms": ["android", "ios"]
+    }, 
+    "star-outline": {
+        "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
+        "keywords": ["star", "bookmark", "premium", "plus", "favorite", "review", "rating"],
+        "category": "interface",
+        "platforms": ["android", "ios"]
+    }, 
+    "square-question-mark": {
+        "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
+        "keywords": ["question mark", "quiz", "help", "info"],
+        "category": "interface",
+        "platforms": ["android", "ios"]
+    }, 
+    "settings": {
+        "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
+        "keywords": ["gear", "settings", "change", "modify"],
+        "category": "account and payments",
+        "platforms": ["android", "ios"]
+    }, 
+    "quotes": {
+        "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
+        "keywords": ["quotes", "speech", "dialogue"],
+        "category": "interface",
+        "platforms": ["android", "ios"]
+    }, 
+    "play-previous": {
+        "colors": [{ "value": "#FFFFFF", "label": "default" }],
+        "keywords": ["previous", "play", "music", "video", "audio", "back"],
+        "category": "video",
+        "platforms": ["android", "ios"]
+    }, 
+    "play-next": {
+        "colors": [{ "value": "#FFFFFF", "label": "default" }],
+        "keywords": ["next", "play", "music", "video", "audio"],
+        "category": "video",
+        "platforms": ["android", "ios"]
+    }, 
+    "minimize": {
+        "colors": [{ "value": "#FFFFFF", "label": "default" }],
+        "keywords": ["minimize", "fullscreen", "music", "video", "audio"],
+        "category": "video",
+        "platforms": ["android", "ios"]
+    }, 
+    "menu-grip": {
+        "colors": [{ "value": "#FFFFFF", "label": "default" }],
+        "keywords": ["menu", "categories", "options"],
+        "category": "video",
+        "platforms": ["tv"]
+    }, 
+    "maximize": {
+        "colors": [{ "value": "#FFFFFF", "label": "default" }],
+        "keywords": ["maximize", "fullscreen", "music", "video", "audio"],
+        "category": "video",
+        "platforms": ["android", "ios"]
+    }, 
+    "gamepad": {
+        "colors": [{ "value": "#464646", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
+        "keywords": ["games", "joy stick", "controller", "play", "gaming", "console", "video game"],
+        "category": "interface",
+        "platforms": ["android", "ios"]
+    }, 
+    "forward": {
+        "colors": [{ "value": "#FFFFFF", "label": "default" }],
+        "keywords": ["forward", "share", "music", "video", "audio"],
+        "category": "video",
+        "platforms": ["android", "ios"]
+    },
+    "bulb-outline": {
+        "colors": [{ "value": "#000000", "label": "default" }],
+        "keywords": ["bulb", "light", "lamp", "idea", "forecast"],
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
     }
 }

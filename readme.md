@@ -33,6 +33,7 @@
    - Follow this guide for naming convention: [Lucide icons guidelines](https://lucide.dev/guide/design/icon-design-guide#naming-conventions).
 5. **For repo maintainer:** 
    - To generate a fresh sprite after adding new icons and to run on local machine:
+   - baseSize should be added in icon meta for icons that are not 24x24 by default. (Needed to exports 1x,2x,3x pngs for ios)
 ```
 npm run build-icons
 npx serve .

@@ -1,11 +1,442 @@
 {
-  "generatedAt": "2025-12-30T12:11:50.132Z",
+  "generatedAt": "2026-01-13T07:51:47.230Z",
   "inputDir": "icons",
   "spritePath": "sprite/sprite.svg",
   "icons": [
     {
+      "name": "bulb-outline",
+      "file": "bulb-outline.svg",
+      "svgPath": "icons/bulb-outline.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
+      "addedDate": "2026-01-13",
+      "addedTs": 1768290375887,
+      "oldClasses": [],
+      "colors": [
+        {
+          "value": "#000000",
+          "label": "default"
+        }
+      ],
+      "keywords": [
+        "bulb",
+        "light",
+        "lamp",
+        "idea",
+        "forecast"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "menu-grip",
+      "file": "menu-grip.svg",
+      "svgPath": "icons/menu-grip.svg",
+      "platforms": [
+        "tv"
+      ],
+      "addedDate": "2026-01-01",
+      "addedTs": 1767249729568,
+      "oldClasses": [],
+      "colors": [
+        {
+          "value": "#FFFFFF",
+          "label": "default"
+        }
+      ],
+      "keywords": [
+        "menu",
+        "categories",
+        "options"
+      ],
+      "note": null,
+      "category": "video"
+    },
+    {
+      "name": "play-next",
+      "file": "play-next.svg",
+      "svgPath": "icons/play-next.svg",
+      "platforms": [
+        "android",
+        "ios"
+      ],
+      "addedDate": "2026-01-01",
+      "addedTs": 1767249729568,
+      "oldClasses": [],
+      "colors": [
+        {
+          "value": "#FFFFFF",
+          "label": "default"
+        }
+      ],
+      "keywords": [
+        "next",
+        "play",
+        "music",
+        "video",
+        "audio"
+      ],
+      "note": null,
+      "category": "video"
+    },
+    {
+      "name": "quotes",
+      "file": "quotes.svg",
+      "svgPath": "icons/quotes.svg",
+      "platforms": [
+        "android",
+        "ios"
+      ],
+      "addedDate": "2026-01-01",
+      "addedTs": 1767249729568,
+      "oldClasses": [],
+      "colors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "quotes",
+        "speech",
+        "dialogue"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "square-question-mark",
+      "file": "square-question-mark.svg",
+      "svgPath": "icons/square-question-mark.svg",
+      "platforms": [
+        "android",
+        "ios"
+      ],
+      "addedDate": "2026-01-01",
+      "addedTs": 1767249729568,
+      "oldClasses": [],
+      "colors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "question mark",
+        "quiz",
+        "help",
+        "info"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "stumps-play",
+      "file": "stumps-play.svg",
+      "svgPath": "icons/stumps-play.svg",
+      "platforms": [
+        "android",
+        "ios"
+      ],
+      "addedDate": "2026-01-01",
+      "addedTs": 1767249729568,
+      "oldClasses": [],
+      "colors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "pencil",
+        "edit",
+        "change",
+        "modify"
+      ],
+      "note": null,
+      "category": "cricket"
+    },
+    {
+      "name": "tv-icon-filled",
+      "file": "tv-icon-filled.svg",
+      "svgPath": "icons/tv-icon-filled.svg",
+      "platforms": [
+        "tv"
+      ],
+      "addedDate": "2026-01-01",
+      "addedTs": 1767249729568,
+      "oldClasses": [],
+      "colors": [
+        {
+          "value": "#FFFFFF",
+          "label": "default"
+        }
+      ],
+      "keywords": [
+        "tv",
+        "live",
+        "television"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "forward",
+      "file": "forward.svg",
+      "svgPath": "icons/forward.svg",
+      "platforms": [
+        "android",
+        "ios"
+      ],
+      "addedDate": "2026-01-01",
+      "addedTs": 1767249729567,
+      "oldClasses": [],
+      "colors": [
+        {
+          "value": "#FFFFFF",
+          "label": "default"
+        }
+      ],
+      "keywords": [
+        "forward",
+        "share",
+        "music",
+        "video",
+        "audio"
+      ],
+      "note": null,
+      "category": "video"
+    },
+    {
+      "name": "maximize",
+      "file": "maximize.svg",
+      "svgPath": "icons/maximize.svg",
+      "platforms": [
+        "android",
+        "ios"
+      ],
+      "addedDate": "2026-01-01",
+      "addedTs": 1767249729567,
+      "oldClasses": [],
+      "colors": [
+        {
+          "value": "#FFFFFF",
+          "label": "default"
+        }
+      ],
+      "keywords": [
+        "maximize",
+        "fullscreen",
+        "music",
+        "video",
+        "audio"
+      ],
+      "note": null,
+      "category": "video"
+    },
+    {
+      "name": "minimize",
+      "file": "minimize.svg",
+      "svgPath": "icons/minimize.svg",
+      "platforms": [
+        "android",
+        "ios"
+      ],
+      "addedDate": "2026-01-01",
+      "addedTs": 1767249729567,
+      "oldClasses": [],
+      "colors": [
+        {
+          "value": "#FFFFFF",
+          "label": "default"
+        }
+      ],
+      "keywords": [
+        "minimize",
+        "fullscreen",
+        "music",
+        "video",
+        "audio"
+      ],
+      "note": null,
+      "category": "video"
+    },
+    {
+      "name": "play-previous",
+      "file": "play-previous.svg",
+      "svgPath": "icons/play-previous.svg",
+      "platforms": [
+        "android",
+        "ios"
+      ],
+      "addedDate": "2026-01-01",
+      "addedTs": 1767249729567,
+      "oldClasses": [],
+      "colors": [
+        {
+          "value": "#FFFFFF",
+          "label": "default"
+        }
+      ],
+      "keywords": [
+        "previous",
+        "play",
+        "music",
+        "video",
+        "audio",
+        "back"
+      ],
+      "note": null,
+      "category": "video"
+    },
+    {
+      "name": "gamepad",
+      "file": "gamepad.svg",
+      "svgPath": "icons/gamepad.svg",
+      "platforms": [
+        "android",
+        "ios"
+      ],
+      "addedDate": "2026-01-01",
+      "addedTs": 1767249729566,
+      "oldClasses": [],
+      "colors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "games",
+        "joy stick",
+        "controller",
+        "play",
+        "gaming",
+        "console",
+        "video game"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "star-outline",
+      "file": "star-outline.svg",
+      "svgPath": "icons/star-outline.svg",
+      "platforms": [
+        "android",
+        "ios"
+      ],
+      "addedDate": "2026-01-01",
+      "addedTs": 1767249729566,
+      "oldClasses": [],
+      "colors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "star",
+        "bookmark",
+        "premium",
+        "plus",
+        "favorite",
+        "review",
+        "rating"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "circle-pencil-filled",
+      "file": "circle-pencil-filled.svg",
+      "svgPath": "icons/circle-pencil-filled.svg",
+      "platforms": [
+        "android",
+        "ios"
+      ],
+      "addedDate": "2026-01-01",
+      "addedTs": 1767249729565,
+      "oldClasses": [],
+      "colors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "pencil",
+        "edit",
+        "change",
+        "modify"
+      ],
+      "note": null,
+      "category": "account and payments"
+    },
+    {
+      "name": "settings",
+      "file": "settings.svg",
+      "svgPath": "icons/settings.svg",
+      "platforms": [
+        "android",
+        "ios"
+      ],
+      "addedDate": "2026-01-01",
+      "addedTs": 1767249729565,
+      "oldClasses": [],
+      "colors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "gear",
+        "settings",
+        "change",
+        "modify"
+      ],
+      "note": null,
+      "category": "account and payments"
+    },
+    {
       "name": "android-logo",
       "file": "android-logo.svg",
+      "svgPath": "icons/android-logo.svg",
+      "platforms": [
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -36,6 +467,10 @@
     {
       "name": "apple-logo",
       "file": "apple-logo.svg",
+      "svgPath": "icons/apple-logo.svg",
+      "platforms": [
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -65,6 +500,12 @@
     {
       "name": "arrow-drop-up",
       "file": "arrow-drop-up.svg",
+      "svgPath": "icons/arrow-drop-up.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -97,6 +538,12 @@
     {
       "name": "arrow-left",
       "file": "arrow-left.svg",
+      "svgPath": "icons/arrow-left.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -125,6 +572,12 @@
     {
       "name": "arrow-right",
       "file": "arrow-right.svg",
+      "svgPath": "icons/arrow-right.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [],
@@ -150,6 +603,12 @@
     {
       "name": "badge-ad",
       "file": "badge-ad.svg",
+      "svgPath": "icons/badge-ad.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -172,6 +631,12 @@
     {
       "name": "badge-percent",
       "file": "badge-percent.svg",
+      "svgPath": "icons/badge-percent.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -200,6 +665,12 @@
     {
       "name": "badge-star",
       "file": "badge-star.svg",
+      "svgPath": "icons/badge-star.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -227,6 +698,12 @@
     {
       "name": "briefcase",
       "file": "briefcase.svg",
+      "svgPath": "icons/briefcase.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -255,6 +732,12 @@
     {
       "name": "calendar",
       "file": "calendar.svg",
+      "svgPath": "icons/calendar.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -282,6 +765,12 @@
     {
       "name": "cb11-icon-ad-colored",
       "file": "cb11-icon-ad-colored.svg",
+      "svgPath": "icons/cb11-icon-ad-colored.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -302,6 +791,12 @@
     {
       "name": "cb11-icon-colored",
       "file": "cb11-icon-colored.svg",
+      "svgPath": "icons/cb11-icon-colored.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -321,6 +816,12 @@
     {
       "name": "check",
       "file": "check.svg",
+      "svgPath": "icons/check.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -358,6 +859,12 @@
     {
       "name": "chevron-down",
       "file": "chevron-down.svg",
+      "svgPath": "icons/chevron-down.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -386,6 +893,12 @@
     {
       "name": "chevron-left",
       "file": "chevron-left.svg",
+      "svgPath": "icons/chevron-left.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [],
@@ -411,6 +924,12 @@
     {
       "name": "chevron-right",
       "file": "chevron-right.svg",
+      "svgPath": "icons/chevron-right.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -440,6 +959,12 @@
     {
       "name": "chevron-up",
       "file": "chevron-up.svg",
+      "svgPath": "icons/chevron-up.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -468,6 +993,12 @@
     {
       "name": "chevrons-down",
       "file": "chevrons-down.svg",
+      "svgPath": "icons/chevrons-down.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -487,7 +1018,8 @@
         "arrow",
         "direction",
         "down",
-        "south"
+        "south",
+        "expand"
       ],
       "note": null,
       "category": "interface"
@@ -495,6 +1027,12 @@
     {
       "name": "chevrons-up",
       "file": "chevrons-up.svg",
+      "svgPath": "icons/chevrons-up.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -514,7 +1052,8 @@
         "arrow",
         "direction",
         "up",
-        "north"
+        "north",
+        "collapse"
       ],
       "note": null,
       "category": "interface"
@@ -522,6 +1061,13 @@
     {
       "name": "circle-close",
       "file": "circle-close.svg",
+      "svgPath": "icons/circle-close.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web",
+        "tv"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -554,6 +1100,12 @@
     {
       "name": "circle-minus",
       "file": "circle-minus.svg",
+      "svgPath": "icons/circle-minus.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -582,6 +1134,12 @@
     {
       "name": "circle-play",
       "file": "circle-play.svg",
+      "svgPath": "icons/circle-play.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -615,6 +1173,12 @@
     {
       "name": "circle-question-mark",
       "file": "circle-question-mark.svg",
+      "svgPath": "icons/circle-question-mark.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -642,6 +1206,13 @@
     {
       "name": "circle-user",
       "file": "circle-user.svg",
+      "svgPath": "icons/circle-user.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web",
+        "tv"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -670,6 +1241,12 @@
     {
       "name": "clipboard",
       "file": "clipboard.svg",
+      "svgPath": "icons/clipboard.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -696,6 +1273,12 @@
     {
       "name": "credit-card",
       "file": "credit-card.svg",
+      "svgPath": "icons/credit-card.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -725,6 +1308,12 @@
     {
       "name": "cricbuzz-11-icon",
       "file": "cricbuzz-11-icon.svg",
+      "svgPath": "icons/cricbuzz-11-icon.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -754,6 +1343,10 @@
     {
       "name": "cricbuzz-11-logo",
       "file": "cricbuzz-11-logo.svg",
+      "svgPath": "icons/cricbuzz-11-logo.svg",
+      "platforms": [
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -778,6 +1371,13 @@
     {
       "name": "cricbuzz-logo",
       "file": "cricbuzz-logo.svg",
+      "svgPath": "icons/cricbuzz-logo.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web",
+        "tv"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -800,6 +1400,12 @@
     {
       "name": "cricket",
       "file": "cricket.svg",
+      "svgPath": "icons/cricket.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -833,6 +1439,12 @@
     {
       "name": "document",
       "file": "document.svg",
+      "svgPath": "icons/document.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -867,6 +1479,12 @@
     {
       "name": "dotted-arrow-down",
       "file": "dotted-arrow-down.svg",
+      "svgPath": "icons/dotted-arrow-down.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -891,6 +1509,12 @@
     {
       "name": "dotted-arrow-up",
       "file": "dotted-arrow-up.svg",
+      "svgPath": "icons/dotted-arrow-up.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -915,6 +1539,10 @@
     {
       "name": "download-app-store",
       "file": "download-app-store.svg",
+      "svgPath": "icons/download-app-store.svg",
+      "platforms": [
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -933,6 +1561,10 @@
     {
       "name": "download-play-store",
       "file": "download-play-store.svg",
+      "svgPath": "icons/download-play-store.svg",
+      "platforms": [
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -952,6 +1584,13 @@
     {
       "name": "ellipsis-vertical",
       "file": "ellipsis-vertical.svg",
+      "svgPath": "icons/ellipsis-vertical.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web",
+        "tv"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -986,6 +1625,12 @@
     {
       "name": "external-link",
       "file": "external-link.svg",
+      "svgPath": "icons/external-link.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -1019,6 +1664,12 @@
     {
       "name": "graph-sparkle",
       "file": "graph-sparkle.svg",
+      "svgPath": "icons/graph-sparkle.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -1047,6 +1698,12 @@
     {
       "name": "hammer",
       "file": "hammer.svg",
+      "svgPath": "icons/hammer.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -1080,6 +1737,12 @@
     {
       "name": "history",
       "file": "history.svg",
+      "svgPath": "icons/history.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -1106,6 +1769,13 @@
     {
       "name": "home-filled",
       "file": "home-filled.svg",
+      "svgPath": "icons/home-filled.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web",
+        "tv"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -1136,6 +1806,12 @@
     {
       "name": "image",
       "file": "image.svg",
+      "svgPath": "icons/image.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -1164,6 +1840,13 @@
     {
       "name": "letter-w",
       "file": "letter-w.svg",
+      "svgPath": "icons/letter-w.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web",
+        "tv"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -1189,6 +1872,12 @@
     {
       "name": "list",
       "file": "list.svg",
+      "svgPath": "icons/list.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -1216,6 +1905,13 @@
     {
       "name": "list-video",
       "file": "list-video.svg",
+      "svgPath": "icons/list-video.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web",
+        "tv"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -1239,6 +1935,12 @@
     {
       "name": "live-logo",
       "file": "live-logo.svg",
+      "svgPath": "icons/live-logo.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -1261,6 +1963,12 @@
     {
       "name": "lock",
       "file": "lock.svg",
+      "svgPath": "icons/lock.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -1300,6 +2008,12 @@
     {
       "name": "mail",
       "file": "mail.svg",
+      "svgPath": "icons/mail.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -1328,6 +2042,12 @@
     {
       "name": "megaphone",
       "file": "megaphone.svg",
+      "svgPath": "icons/megaphone.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -1356,6 +2076,12 @@
     {
       "name": "message-square-more",
       "file": "message-square-more.svg",
+      "svgPath": "icons/message-square-more.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -1387,6 +2113,12 @@
     {
       "name": "monitor-play",
       "file": "monitor-play.svg",
+      "svgPath": "icons/monitor-play.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -1412,6 +2144,12 @@
     {
       "name": "no-ads",
       "file": "no-ads.svg",
+      "svgPath": "icons/no-ads.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -1437,6 +2175,13 @@
     {
       "name": "octagon-alert",
       "file": "octagon-alert.svg",
+      "svgPath": "icons/octagon-alert.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web",
+        "tv"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -1468,6 +2213,13 @@
     {
       "name": "pause",
       "file": "pause.svg",
+      "svgPath": "icons/pause.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web",
+        "tv"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -1493,6 +2245,12 @@
     {
       "name": "pencil",
       "file": "pencil.svg",
+      "svgPath": "icons/pencil.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -1521,6 +2279,12 @@
     {
       "name": "plane",
       "file": "plane.svg",
+      "svgPath": "icons/plane.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -1548,6 +2312,13 @@
     {
       "name": "play",
       "file": "play.svg",
+      "svgPath": "icons/play.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web",
+        "tv"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -1574,6 +2345,13 @@
     {
       "name": "playback-forward",
       "file": "playback-forward.svg",
+      "svgPath": "icons/playback-forward.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web",
+        "tv"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -1596,6 +2374,13 @@
     {
       "name": "playback-rewind",
       "file": "playback-rewind.svg",
+      "svgPath": "icons/playback-rewind.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web",
+        "tv"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -1619,6 +2404,13 @@
     {
       "name": "plus",
       "file": "plus.svg",
+      "svgPath": "icons/plus.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web",
+        "tv"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -1644,6 +2436,13 @@
     {
       "name": "power",
       "file": "power.svg",
+      "svgPath": "icons/power.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web",
+        "tv"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -1672,6 +2471,13 @@
     {
       "name": "replay",
       "file": "replay.svg",
+      "svgPath": "icons/replay.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web",
+        "tv"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -1701,6 +2507,12 @@
     {
       "name": "scoreboard",
       "file": "scoreboard.svg",
+      "svgPath": "icons/scoreboard.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -1723,6 +2535,10 @@
     {
       "name": "scorecard-0",
       "file": "scorecard-0.svg",
+      "svgPath": "icons/scorecard-0.svg",
+      "platforms": [
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -1740,6 +2556,10 @@
     {
       "name": "scorecard-1",
       "file": "scorecard-1.svg",
+      "svgPath": "icons/scorecard-1.svg",
+      "platforms": [
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -1757,6 +2577,10 @@
     {
       "name": "scorecard-2",
       "file": "scorecard-2.svg",
+      "svgPath": "icons/scorecard-2.svg",
+      "platforms": [
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -1774,6 +2598,10 @@
     {
       "name": "scorecard-3",
       "file": "scorecard-3.svg",
+      "svgPath": "icons/scorecard-3.svg",
+      "platforms": [
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -1791,6 +2619,10 @@
     {
       "name": "scorecard-4",
       "file": "scorecard-4.svg",
+      "svgPath": "icons/scorecard-4.svg",
+      "platforms": [
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -1808,6 +2640,10 @@
     {
       "name": "scorecard-5",
       "file": "scorecard-5.svg",
+      "svgPath": "icons/scorecard-5.svg",
+      "platforms": [
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -1825,6 +2661,10 @@
     {
       "name": "scorecard-6",
       "file": "scorecard-6.svg",
+      "svgPath": "icons/scorecard-6.svg",
+      "platforms": [
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -1842,6 +2682,10 @@
     {
       "name": "scorecard-7",
       "file": "scorecard-7.svg",
+      "svgPath": "icons/scorecard-7.svg",
+      "platforms": [
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -1859,6 +2703,10 @@
     {
       "name": "scorecard-8",
       "file": "scorecard-8.svg",
+      "svgPath": "icons/scorecard-8.svg",
+      "platforms": [
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -1876,6 +2724,10 @@
     {
       "name": "scorecard-9",
       "file": "scorecard-9.svg",
+      "svgPath": "icons/scorecard-9.svg",
+      "platforms": [
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -1893,6 +2745,13 @@
     {
       "name": "search",
       "file": "search.svg",
+      "svgPath": "icons/search.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web",
+        "tv"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -1922,6 +2781,12 @@
     {
       "name": "share",
       "file": "share.svg",
+      "svgPath": "icons/share.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -1948,6 +2813,12 @@
     {
       "name": "smartphone",
       "file": "smartphone.svg",
+      "svgPath": "icons/smartphone.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -1975,6 +2846,12 @@
     {
       "name": "social-facebook",
       "file": "social-facebook.svg",
+      "svgPath": "icons/social-facebook.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -2005,6 +2882,12 @@
     {
       "name": "social-instagram",
       "file": "social-instagram.svg",
+      "svgPath": "icons/social-instagram.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [],
@@ -2029,6 +2912,12 @@
     {
       "name": "social-linkedin",
       "file": "social-linkedin.svg",
+      "svgPath": "icons/social-linkedin.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -2055,6 +2944,12 @@
     {
       "name": "social-whatsapp",
       "file": "social-whatsapp.svg",
+      "svgPath": "icons/social-whatsapp.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -2081,6 +2976,12 @@
     {
       "name": "social-x",
       "file": "social-x.svg",
+      "svgPath": "icons/social-x.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -2110,6 +3011,12 @@
     {
       "name": "social-youtube",
       "file": "social-youtube.svg",
+      "svgPath": "icons/social-youtube.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -2136,6 +3043,13 @@
     {
       "name": "star-filled",
       "file": "star-filled.svg",
+      "svgPath": "icons/star-filled.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web",
+        "tv"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -2167,6 +3081,12 @@
     {
       "name": "table",
       "file": "table.svg",
+      "svgPath": "icons/table.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -2194,6 +3114,12 @@
     {
       "name": "tag",
       "file": "tag.svg",
+      "svgPath": "icons/tag.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -2223,6 +3149,12 @@
     {
       "name": "ticket-star",
       "file": "ticket-star.svg",
+      "svgPath": "icons/ticket-star.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -2253,6 +3185,12 @@
     {
       "name": "trending-up-lines",
       "file": "trending-up-lines.svg",
+      "svgPath": "icons/trending-up-lines.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -2281,6 +3219,13 @@
     {
       "name": "trophy",
       "file": "trophy.svg",
+      "svgPath": "icons/trophy.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web",
+        "tv"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -2317,6 +3262,12 @@
     {
       "name": "trophy-star",
       "file": "trophy-star.svg",
+      "svgPath": "icons/trophy-star.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -2350,6 +3301,13 @@
     {
       "name": "tv-icon-outline",
       "file": "tv-icon-outline.svg",
+      "svgPath": "icons/tv-icon-outline.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web",
+        "tv"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [],
@@ -2373,6 +3331,12 @@
     {
       "name": "user",
       "file": "user.svg",
+      "svgPath": "icons/user.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -2400,6 +3364,12 @@
     {
       "name": "user-group",
       "file": "user-group.svg",
+      "svgPath": "icons/user-group.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -2428,6 +3398,12 @@
     {
       "name": "users",
       "file": "users.svg",
+      "svgPath": "icons/users.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -2456,6 +3432,13 @@
     {
       "name": "volume-1",
       "file": "volume-1.svg",
+      "svgPath": "icons/volume-1.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web",
+        "tv"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -2481,6 +3464,13 @@
     {
       "name": "volume-x",
       "file": "volume-x.svg",
+      "svgPath": "icons/volume-x.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web",
+        "tv"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [],
@@ -2504,6 +3494,12 @@
     {
       "name": "voucher-digital",
       "file": "voucher-digital.svg",
+      "svgPath": "icons/voucher-digital.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [
@@ -2532,6 +3528,13 @@
     {
       "name": "willow-by-cricbuzz-logo",
       "file": "willow-by-cricbuzz-logo.svg",
+      "svgPath": "icons/willow-by-cricbuzz-logo.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web",
+        "tv"
+      ],
       "addedDate": "2025-12-30",
       "addedTs": 1767072475000,
       "oldClasses": [],
@@ -2551,6 +3554,12 @@
     {
       "name": "ball-fire",
       "file": "ball-fire.svg",
+      "svgPath": "icons/ball-fire.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-23",
       "addedTs": 1766494323000,
       "oldClasses": [],
@@ -2576,6 +3585,12 @@
     {
       "name": "ball-moving",
       "file": "ball-moving.svg",
+      "svgPath": "icons/ball-moving.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-23",
       "addedTs": 1766494323000,
       "oldClasses": [],
@@ -2601,6 +3616,12 @@
     {
       "name": "ball-rotate-left",
       "file": "ball-rotate-left.svg",
+      "svgPath": "icons/ball-rotate-left.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-23",
       "addedTs": 1766494323000,
       "oldClasses": [],
@@ -2626,6 +3647,12 @@
     {
       "name": "ball-rotate-right",
       "file": "ball-rotate-right.svg",
+      "svgPath": "icons/ball-rotate-right.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-23",
       "addedTs": 1766494323000,
       "oldClasses": [],
@@ -2651,6 +3678,12 @@
     {
       "name": "bat-lhb",
       "file": "bat-lhb.svg",
+      "svgPath": "icons/bat-lhb.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-23",
       "addedTs": 1766494323000,
       "oldClasses": [],
@@ -2675,6 +3708,12 @@
     {
       "name": "bat-rhb",
       "file": "bat-rhb.svg",
+      "svgPath": "icons/bat-rhb.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-23",
       "addedTs": 1766494323000,
       "oldClasses": [],
@@ -2699,6 +3738,12 @@
     {
       "name": "copy",
       "file": "copy.svg",
+      "svgPath": "icons/copy.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-23",
       "addedTs": 1766494323000,
       "oldClasses": [
@@ -2724,6 +3769,12 @@
     {
       "name": "arrow-drop-down",
       "file": "arrow-drop-down.svg",
+      "svgPath": "icons/arrow-drop-down.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-01",
       "addedTs": 1764586028000,
       "oldClasses": [
@@ -2758,6 +3809,13 @@
     {
       "name": "close",
       "file": "close.svg",
+      "svgPath": "icons/close.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web",
+        "tv"
+      ],
       "addedDate": "2025-12-01",
       "addedTs": 1764586028000,
       "oldClasses": [
@@ -2796,6 +3854,13 @@
     {
       "name": "emoticon-sad",
       "file": "emoticon-sad.svg",
+      "svgPath": "icons/emoticon-sad.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web",
+        "tv"
+      ],
       "addedDate": "2025-12-01",
       "addedTs": 1764586028000,
       "oldClasses": [
@@ -2822,6 +3887,12 @@
     {
       "name": "filter",
       "file": "filter.svg",
+      "svgPath": "icons/filter.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-01",
       "addedTs": 1764586028000,
       "oldClasses": [
@@ -2846,6 +3917,13 @@
     {
       "name": "info",
       "file": "info.svg",
+      "svgPath": "icons/info.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web",
+        "tv"
+      ],
       "addedDate": "2025-12-01",
       "addedTs": 1764586028000,
       "oldClasses": [
@@ -2874,6 +3952,12 @@
     {
       "name": "sort",
       "file": "sort.svg",
+      "svgPath": "icons/sort.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
       "addedDate": "2025-12-01",
       "addedTs": 1764586028000,
       "oldClasses": [

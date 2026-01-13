@@ -9,5 +9,8 @@
     "fs-extra": "^11.3.3",
     "svg-sprite": "^1.5.0",
     "svgo": "^3.0.0"
+  },
+  "dependencies": {
+    "sharp": "^0.34.5"
   }
 }

@@ -14,9 +14,10 @@
     .card { border:1px solid #eee; border-radius:14px; padding:12px; display:flex; gap:10px; background-color: white; position: relative;}
     .iconBox { width:50px; height:50px; border:1px solid #f0f0f0; border-radius:12px; display:grid; place-items:center; cursor: pointer; }
     .iconBox:hover { background-color: #000000; color: #ffffff; }
-    .iconBox svg { width:30px; height:30px; }
-    .iconBox.big { width:100%; height:150px; }
-    .iconBox.big svg { width:80%; height:120px; }
+    .iconBox.big:hover { background-color: #ffffff; color: #000000; }
+    .iconBox svg, .iconBox img { width:30px; height:30px; }
+    .iconBox.big { width:100%; height:150px; cursor:auto; }
+    .iconBox.big svg, .iconBox.big img { width:80%; height:120px; }
     .name { font-weight:600; font-size:13px;display: flex; align-items: center; gap: 4px; }
     .code { font-family: ui-monospace, monospace; font-size:12px; color:#333; margin-top:4px; word-break:break-word; display: none; }
     button { margin-top:8px; margin-right:8px; border:1px solid #ddd; background:#fff; padding:4px 10px; border-radius:6px; cursor:pointer; font-size:10px; }
@@ -99,10 +100,6 @@
   opacity: 0.7;
 }
 .copyIcon:hover { opacity: 1; }
-.infoIcon { 
-  cursor: pointer;position: absolute;right: 10px;top: 8px;color: #868686;display: none;
-}
-.card:hover > .infoIcon { display: block; }
 
 .kw{
   color: #636363;
@@ -110,21 +107,51 @@
     font-size: .75rem;
     margin-top: 8px;
 }
+
+.actionBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: 10px 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+}
+.actionBtn:hover { background: #f7f7f7; }
+.actionBtn svg { width: 14px; height: 14px; }
+.pill {
+  border: 1px solid #ddd;
+  background: white;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.pill.active {
+  background: black;
+  color: white;
+  border-color: black;
+}
   </style>
 </head>
 <body>
 <header style="display: flex;justify-content: space-between;">
-    <div id="meta" style="color:#666;font-size:13px;flex: 1 1 0%;"></div>
-    <div style="flex: 1 1 0%;">
-        <h1 style="margin:0;font-size:18px;display: none;">Icons</h1>
-        <input id="search" placeholder="Search icons…" />
-    </div>
-    <div style="flex: 1 1 0%;display: flex;align-items: center;justify-content: end;gap: 8px;">
-        <button id="downloadSprite" style=" font-size: 16px;font-weight: 500;margin:0;padding: 8px 16px;background: black;color: white;border: 4px dashed #f7f7f7;">Download latest sprite</button>
-        <svg id="infoBtn" style="cursor: pointer;" width="18" height="18" aria-hidden="true"><use href="sprite/sprite.svg#info"></use></svg>
-    </div>
+  <div id="platformFilters" style="display:flex; gap:8px; flex-wrap:wrap;flex: 1 1 0%;"></div>
+  <div style="flex: 1 1 0%;">
+    <h1 style="margin:0;font-size:18px;display: none;">Icons</h1>
+    <input id="search" placeholder="Search icons…" />
+  </div>
+  <div style="flex: 1 1 0%;display: flex;align-items: center;justify-content: end;gap: 8px;">
+    <button id="downloadSprite" style=" font-size: 16px;font-weight: 500;margin:0;padding: 8px 16px;background: black;color: white;border: 4px dashed #f7f7f7;">Download web sprite</button>
+    <svg id="infoBtn" style="cursor: pointer;" width="18" height="18" aria-hidden="true"><use href="sprite/sprite.svg#info"></use></svg>
+  </div>
 </header>
 <hr style="border: .5px solid #e6e6e6;margin-top: 20px;">
+<div id="meta" style="color:#666;font-size:13px; margin-top:10px;"></div>
+
 <div id="app"></div>
 <div class="toast" id="toast"></div>
 
@@ -226,26 +253,29 @@ function matchesQuery(icon, q) {
 }
 
   function render() {
-    const icons = data.icons.filter(i => matchesQuery(i, q));
+    const icons = data.icons.filter(i => matchesQuery(i, q) && platformMatch(i));
     const grouped = groupByDate(icons);
-
+    
+    meta.textContent = `Total: ${icons.length} • Generated: ${new Date(data.generatedAt).toLocaleString()}`;
     app.innerHTML = grouped.map(([date, arr]) => `
       <section>
         <h2>${formatDate(date)} <span style="color:#888;font-weight:400">(${arr.length})</span></h2>
         <div class="grid">
           ${arr.map(i => `
             <div class="card">
-              <svg class="infoIcon" data-open="${i.name}" width="18" height="18" aria-hidden="true"><use href="sprite/sprite.svg#info"></use></svg>
               <div class="iconBox" data-open="${i.name}">
-                <svg aria-hidden="true"><use href="${data.spritePath}#${i.name}"></use></svg>
+                ${isWebIcon(i)
+                  ? `<svg aria-hidden="true"><use href="${data.spritePath}#${i.name}"></use></svg>`
+                  : `<img src="${i.svgPath}" alt="${i.name}" />`
+                }
               </div>
               <div style="min-width:0">
-                <div class="name">${i.name} 
-                    <svg aria-hidden="true" style="width: 14px;height: 14px;cursor:pointer;color: #646464;" data-copy-name="${i.name}"><use href="sprite/sprite.svg#copy"></use></svg>
+                <div class="name">${activePlatform === "android" ? toAndroidName(i.name) : i.name}
+                    <svg aria-hidden="true" style="width: 14px;height: 14px;cursor:pointer;color: #646464;" data-copy-name="${activePlatform === "android" ? toAndroidName(i.name) : i.name}"><use href="sprite/sprite.svg#copy"></use></svg>
                     </div>
                 <div class="code">${escapeHtml(snippet(i.name))}</div>
                 <div>
-                  <button data-copy-snippet="${i.name}">Copy &lt;use&gt;</button>
+                  <button data-open="${i.name}">View details</button>
                 </div>
               </div>
             </div>
@@ -265,7 +295,12 @@ function matchesQuery(icon, q) {
   (async function init() {
     const res = await fetch("sprite/icons.json");
     data = await res.json();
-    meta.textContent = `Total: ${data.icons.length} • Generated: ${new Date(data.generatedAt).toLocaleString()}`;
+    
+    const allPlatforms = new Set(["web", "android", "ios", "tv"]);
+    data.icons.forEach(i => (i.platforms || []).forEach(p => allPlatforms.add(p)));
+
+    renderPlatformPills([...allPlatforms]);
+
     render();
   })();
 
@@ -363,12 +398,13 @@ function openDrawer(icon) {
   drawer.classList.add("is-open");
   drawer.setAttribute("aria-hidden", "false");
 
-  drawerTitle.textContent = icon.name;
+  var iconName = activePlatform === "android" ? toAndroidName(icon.name) : icon.name;
+  drawerTitle.textContent = iconName;
   drawerSubtitle.textContent = `Added: ${formatDate(icon.addedDate)}`;
 
   const use = snippet(icon.name);
 
-  const oldClassesHtml = icon.oldClasses?.length
+  const oldClassesHtml = icon.oldClasses?.length && (activePlatform === "web" || activePlatform === "all")
   ? `
     <div class="kv">
       <div class="label">Old class name(s)</div>
@@ -415,21 +451,43 @@ function openDrawer(icon) {
   `
   : "";
 
-  drawerBody.innerHTML = `
-    <div style="display:flex;align-items:center;gap:12px;">
-      <div class="iconBox big"><svg><use href="${data.spritePath}#${icon.name}"></use></svg></div>
-    </div>
+  const iosDownloadsHtml = isIOS(icon)
+  ? `
+        <button class="actionBtn" data-download="${pngPath(icon.name, 1)}"><svg aria-hidden="true"><use href="sprite/sprite.svg#image"></use></svg> PNG @1x</button>
+        <button class="actionBtn" data-download="${pngPath(icon.name, 2)}"><svg aria-hidden="true"><use href="sprite/sprite.svg#image"></use></svg> PNG @2x</button>
+        <button class="actionBtn" data-download="${pngPath(icon.name, 3)}"><svg aria-hidden="true"><use href="sprite/sprite.svg#image"></use></svg> PNG @3x</button>
+        <button class="actionBtn" data-download="${pdfPath(icon.name)}"><svg aria-hidden="true"><use href="sprite/sprite.svg#document"></use></svg> PDF</button>
+  `
+  : "";
 
+  const downloadSvgBtn = icon.svgPath ? `
+  <div class="kv">
+    <div class="label">Downloads</div>
+    <button class="actionBtn" data-icon-name="${icon.name}" data-download-svg="${icon.svgPath}">
+      <svg aria-hidden="true"><use href="sprite/sprite.svg#android-logo"></use></svg>
+      SVG
+    </button>
+    ${iosDownloadsHtml}
+    <button class="actionBtn" data-copy-svg="${icon.svgPath}" data-icon-name="${icon.name}">
+      <svg aria-hidden="true"><use href="sprite/sprite.svg#copy"></use></svg>
+      SVG
+    </button>
+  </div>
+` : "";
+
+  const platformsHtml = (icon.platforms && icon.platforms.length)
+  ? `
     <div class="kv">
-      <div class="label">SVG name</div>
-      <div class="value">
-        ${escapeHtml(icon.name)}
-        <svg class="copyIcon" data-copy-name="${icon.name}" aria-hidden="true">
-          <use href="sprite/sprite.svg#copy"></use>
-        </svg>
+      <div class="label">Platforms</div>
+      <div class="kw">
+        ${icon.platforms.map(p => `${p}`).join(" • ")}
       </div>
     </div>
+  `
+  : "";
 
+  const useSnippetHtml = activePlatform === "web" || activePlatform === "all"
+  ? `
     <div class="kv">
       <div class="label">&lt;use&gt; snippet</div>
       <div class="value">
@@ -439,6 +497,31 @@ function openDrawer(icon) {
         </svg>
       </div>
     </div>
+  `
+  : "";
+
+
+  drawerBody.innerHTML = `
+    <div style="display:flex;align-items:center;gap:12px;">
+      <div class="iconBox big">
+        ${isWebIcon(icon)
+          ? `<svg><use href="${data.spritePath}#${icon.name}"></use></svg>`
+          : `<img src="${icon.svgPath}" alt="${icon.name}" />`
+        }
+        </div>
+    </div>
+
+    <div class="kv">
+      <div class="label">SVG name</div>
+      <div class="value">
+        ${activePlatform === "android" ? escapeHtml(toAndroidName(icon.name)) : escapeHtml(icon.name)}
+        <svg class="copyIcon" data-copy-name="${activePlatform === "android" ? toAndroidName(icon.name) : icon.name}" aria-hidden="true">
+          <use href="sprite/sprite.svg#copy"></use>
+        </svg>
+      </div>
+    </div>
+
+    ${useSnippetHtml}
     
     ${icon.note ? `
       <div class="kv">
@@ -450,11 +533,15 @@ function openDrawer(icon) {
     
     ${colorsHtml}
     
+    ${oldClassesHtml}
+
     ${keywordsHtml}
     
     ${categoryHtml}
     
-    ${oldClassesHtml}
+    ${platformsHtml}
+
+    ${downloadSvgBtn}
   `;
 
   drawerBody.querySelectorAll("[data-copy-color]").forEach(el => {
@@ -496,7 +583,7 @@ drawerBody.addEventListener("click", (e) => {
   e.stopPropagation();
 
   if (el.dataset.copyName) {
-    copy(el.dataset.copyName, "SVG name copied");
+    copy(el.dataset.copyName, el.dataset.copyName + " - copied");
     return;
   }
 
@@ -508,6 +595,156 @@ drawerBody.addEventListener("click", (e) => {
   if (el.dataset.copyText) {
     copy(el.dataset.copyText, "Copied");
     return;
+  }
+});
+
+drawerBody.addEventListener("click", async (e) => {
+  const btn = e.target.closest("[data-download-svg]");
+  if (!btn) return;
+
+  e.stopPropagation();
+
+  const filePath = btn.dataset.downloadSvg;
+  const iconName = btn.dataset.iconName;
+
+  try {
+    const res = await fetch(filePath);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+
+    const blob = await res.blob();
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = filePath.split("/").pop();
+     if (activePlatform === "android") {
+        a.download = toAndroidName(iconName) + ".svg";
+      }
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+
+    URL.revokeObjectURL(url);
+    showToast("SVG downloaded");
+  } catch (err) {
+    console.error(err);
+    showToast("Download failed");
+  }
+});
+
+drawerBody.addEventListener("click", (e) => {
+  const btn = e.target.closest("[data-download]");
+  if (!btn) return;
+
+  e.stopPropagation();
+
+  const href = btn.dataset.download;
+
+  const a = document.createElement("a");
+  a.href = href;
+  a.download = href.split("/").pop();
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+
+  showToast("Download started");
+});
+
+
+let activePlatform = "web";
+const params = getParams();
+if (params.platform) {
+  activePlatform = normalizePlatform(params.platform);
+}
+
+function normalizePlatform(p) {
+  const allowed = new Set(["all", "web", "android", "ios", "tv"]);
+  return allowed.has(p) ? p : "web";
+}
+
+function updateUrl() {
+  const params = new URLSearchParams(window.location.search);
+
+  params.set("platform", activePlatform);
+
+  const newUrl = window.location.pathname + "?" + params.toString();
+  history.replaceState(null, "", newUrl);
+}
+
+
+function platformMatch(icon) {
+  if (activePlatform === "all") return true;
+  return (icon.platforms || []).includes(activePlatform);
+}
+
+function renderPlatformPills(platforms) {
+  const el = document.getElementById("platformFilters");
+const pills = ["all", ...platforms.filter(p => p !== "all" && p !== "default")];
+
+  el.innerHTML = pills.map(p =>
+    `<span class="pill ${p === activePlatform ? "active" : ""}" data-platform="${p}">
+      ${p.toUpperCase()}
+    </span>`
+  ).join("");
+
+  el.querySelectorAll("[data-platform]").forEach(pill => {
+    pill.onclick = () => {
+      activePlatform = pill.dataset.platform;
+      updateUrl();
+      renderPlatformPills(platforms);
+      render();
+    };
+  });
+}
+
+function isWebIcon(icon) {
+  return (icon.platforms || []).includes("web");
+}
+function isIOS(icon) {
+  return (icon.platforms || []).includes("ios");
+}
+
+function pngPath(name, scale) {
+  return `sprite/exports/png/${name}@${scale}x.png`;
+}
+
+function pdfPath(name) {
+  return `sprite/exports/pdf/${name}.pdf`;
+}
+
+function getParams() {
+  const url = new URL(location.href);
+  return {
+    platform: url.searchParams.get("platform") || "web",
+    q: url.searchParams.get("q") || ""
+  };
+}
+
+
+function toAndroidName(name) {
+  return name.replaceAll("-", "_");
+}
+
+
+drawerBody.addEventListener("click", async (e) => {
+  const btn = e.target.closest("[data-copy-svg]");
+  if (!btn) return;
+
+  e.stopPropagation();
+
+  const filePath = btn.dataset.copySvg;
+
+  try {
+    const res = await fetch(filePath);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+
+    const svgText = await res.text();
+
+    await navigator.clipboard.writeText(svgText);
+    showToast("SVG copied");
+  } catch (err) {
+    console.error(err);
+    showToast("Copy failed");
   }
 });
 

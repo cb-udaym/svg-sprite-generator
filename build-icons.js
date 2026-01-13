@@ -6,6 +6,7 @@ const fg = require('fast-glob');
 const { optimize } = require('svgo');
 const { execSync } = require("child_process");
 const Sprite = require('svg-sprite');
+const sharp = require("sharp");
 
 const INPUT_DIR = path.join(__dirname, 'icons'); // your source icons
 const TEMP_DIR = path.join(__dirname, 'temp-optimized');
@@ -17,6 +18,10 @@ const CONFIG_DIR = path.join(__dirname, "config");
 
 const SKIP_OPT_FILE = path.join(CONFIG_DIR, "skip-optimize.json");
 const META_FILE = path.join(CONFIG_DIR, "icon-meta.json");
+
+const EXPORT_DIR = path.join(OUT_DIR, "exports"); // sprite/exports
+const PNG_DIR = path.join(EXPORT_DIR, "png");     // sprite/exports/png
+const PDF_DIR = path.join(EXPORT_DIR, "pdf");     // sprite/exports/pdf
 
 
 function loadSkipList() {
@@ -45,16 +50,124 @@ function loadMeta() {
   }
 }
 
-// Prefer git “first added” date. Falls back to filesystem mtime.
-function getAddedDate(absPath) {
-  try {
-    const cmd = `git log --diff-filter=A --follow --format=%ad --date=short -- "${absPath}" | tail -n 1`;
-    const out = execSync(cmd, { stdio: ["ignore", "pipe", "ignore"] }).toString().trim();
-    if (out) return out; // YYYY-MM-DD
-  } catch {}
-  const stat = fs.statSync(absPath);
-  return new Date(stat.mtime).toISOString().slice(0, 10);
+function getBaseSize(metaEntry) {
+  const bs = metaEntry?.baseSize;
+
+  if (Array.isArray(bs) && bs.length === 2) {
+    return [Number(bs[0]), Number(bs[1])];
+  }
+
+  if (typeof bs === "number") {
+    return [bs, bs];
+  }
+
+  return [24, 24];
 }
+
+
+async function generatePngExports() {
+  const files = await fg("**/*.svg", { cwd: INPUT_DIR, dot: false });
+  const meta = loadMeta();
+
+  await fs.remove(PNG_DIR);
+  await fs.ensureDir(PNG_DIR);
+
+  for (const rel of files) {
+    const name = iconNameFromRelPath(rel);
+    const m = meta[name] || {};
+    const [baseW, baseH] = getBaseSize(m);
+
+
+    // Optional: only generate for icons that support iOS
+    const platforms = Array.isArray(m.platforms) ? m.platforms : ["web"];
+    if (!platforms.includes("ios")) continue;
+
+    const abs = path.join(INPUT_DIR, rel);
+    const svg = await fs.readFile(abs);
+
+    for (const scale of [1, 2, 3]) {
+      const out = path.join(PNG_DIR, `${name}@${scale}x.png`);
+      await sharp(svg)
+        .resize(baseW * scale, baseH * scale)
+        .png()
+        .toFile(out);
+    }
+  }
+
+  console.log("✅ PNG exports written to", PNG_DIR);
+}
+
+async function generatePdfExports() {
+  const files = await fg("**/*.svg", { cwd: INPUT_DIR, dot: false });
+  const meta = loadMeta();
+
+  await fs.remove(PDF_DIR);
+  await fs.ensureDir(PDF_DIR);
+
+  for (const rel of files) {
+    const name = iconNameFromRelPath(rel);
+    const m = meta[name] || {};
+
+    // Optional: only generate for icons that support iOS
+    const platforms = Array.isArray(m.platforms) ? m.platforms : ["web"];
+    if (!platforms.includes("ios")) continue;
+
+    const abs = path.join(INPUT_DIR, rel);
+    const out = path.join(PDF_DIR, `${name}.pdf`);
+
+    try {
+      execSync(`inkscape "${abs}" --export-type=pdf --export-filename="${out}"`, {
+        stdio: "ignore"
+      });
+    } catch (err) {
+      console.warn("⚠️ PDF export failed:", rel);
+    }
+  }
+
+  console.log("✅ PDF exports written to", PDF_DIR);
+}
+
+
+function assertUniqueNames(files) {
+  const seen = new Map();
+  const dupes = [];
+
+  for (const rel of files) {
+    const name = iconNameFromRelPath(rel).toLowerCase();
+    if (seen.has(name)) {
+      dupes.push({ name, a: seen.get(name), b: rel });
+    } else {
+      seen.set(name, rel);
+    }
+  }
+
+  if (dupes.length) {
+    console.error("\n❌ Duplicate icon names found:\n");
+    dupes.forEach(d => {
+      console.error(`- ${d.name}`);
+      console.error(`  1) ${d.a}`);
+      console.error(`  2) ${d.b}\n`);
+    });
+    process.exit(1);
+  }
+}
+
+function assertKebabLowercase(files) {
+  const bad = [];
+
+  for (const rel of files) {
+    const base = path.basename(rel, ".svg");
+    if (!/^[a-z0-9]+(-[a-z0-9]+)*$/.test(base)) bad.push(rel);
+  }
+
+  if (bad.length) {
+    console.error("\n❌ Invalid file names (must be lowercase kebab-case):\n");
+    bad.forEach(f => console.error(`- ${f}`));
+    console.error("\n✅ Example: arrow-drop-down.svg\n");
+    process.exit(1);
+  }
+}
+
 function getAddedMeta(absPath) {
   try {
     // Get oldest commit date/time for file (first introduction)
@@ -88,6 +201,8 @@ function iconNameFromRelPath(rel) {
 async function generateIconsJson() {
   // find all svg files in original INPUT_DIR (not temp)
   const files = await fg('**/*.svg', { cwd: INPUT_DIR, dot: false });
+  assertUniqueNames(files);
+  assertKebabLowercase(files);
   const meta = loadMeta();
 
 
@@ -95,11 +210,14 @@ async function generateIconsJson() {
     const abs = path.join(INPUT_DIR, rel);
     const name = iconNameFromRelPath(rel); // e.g. "close" or "actions/close"
     const m = meta[name] || {};
+    const platforms = Array.isArray(m.platforms) ? m.platforms : (m.platforms ? [m.platforms] : ["default"]);  // ✅ default
     const { addedDate, addedTs } = getAddedMeta(abs);
 
     return {
       name,
       file: rel.replace(/\\/g, "/"), // relative path within INPUT_DIR
+      svgPath: `icons/${rel.replace(/\\/g, "/")}`,
+      platforms,
       addedDate: addedDate, // YYYY-MM-DD,
       addedTs: addedTs,     // epoch ms for sorting
 
@@ -211,7 +329,20 @@ async function createSprite() {
 
   // add optimized files
   const files = await fg('**/*.svg', { cwd: TEMP_DIR });
+  const meta = loadMeta(); // ✅ read config meta once
   for (const rel of files) {
+
+      const name = iconNameFromRelPath(rel);
+      const m = meta[name] || {};
+      const platforms = Array.isArray(m.platforms)
+        ? m.platforms
+        : (m.platforms ? [m.platforms] : ["default"]);
+
+      if (!platforms.includes("web")) {
+        console.log(`🚫 Skipping non-web icon from sprite: ${rel}`);
+        continue;
+      }
+
     const filePath = path.join(TEMP_DIR, rel);
     const contents = await fs.readFile(filePath, 'utf8');
     // second param is name, we provide rel so ids can be based on path if you want
@@ -293,8 +424,14 @@ async function run() {
 
     console.log('Generating icons.json...');
     await generateIconsJson();
-
     console.log('✅ Sprite written to', OUT_FILE);
+    
+    console.log("Generating PNG exports...");
+    await generatePngExports();
+
+    console.log("Generating PDF exports...");
+    await generatePdfExports();
+
   } catch (err) {
     console.error('Error building sprite:', err);
     process.exitCode = 1;
