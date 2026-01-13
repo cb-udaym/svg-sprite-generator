@@ -855,8 +855,14 @@
         "platforms": ["android", "ios"]
     },
     "bulb-outline": {
-        "colors": [{ "value": "#000000", "label": "default" }],
+        "colors": [{ "value": "#212121", "label": "default" }, { "value": "rgba(255, 255, 255, 0.87)", "label": "darkMode" }],
         "keywords": ["bulb", "light", "lamp", "idea", "forecast"],
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
+    },
+    "hourglass-half-filled": {
+        "colors": [{ "value": "#D0D3D4", "label": "default" }, { "value": "#6D6F6F", "label": "darkMode" }],
+        "keywords": ["hourglass", "time", "waiting", "loading", "empty state", "error"],
         "category": "interface",
         "platforms": ["android", "ios", "web"]
     }

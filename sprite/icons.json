@@ -1,8 +1,41 @@
 {
-  "generatedAt": "2026-01-13T07:51:47.230Z",
+  "generatedAt": "2026-01-13T08:55:49.726Z",
   "inputDir": "icons",
   "spritePath": "sprite/sprite.svg",
   "icons": [
+    {
+      "name": "hourglass-half-filled",
+      "file": "hourglass-half-filled.svg",
+      "svgPath": "icons/hourglass-half-filled.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
+      "addedDate": "2026-01-13",
+      "addedTs": 1768294185096,
+      "oldClasses": [],
+      "colors": [
+        {
+          "value": "#D0D3D4",
+          "label": "default"
+        },
+        {
+          "value": "#6D6F6F",
+          "label": "darkMode"
+        }
+      ],
+      "keywords": [
+        "hourglass",
+        "time",
+        "waiting",
+        "loading",
+        "empty state",
+        "error"
+      ],
+      "note": null,
+      "category": "interface"
+    },
     {
       "name": "bulb-outline",
       "file": "bulb-outline.svg",
@@ -13,12 +46,16 @@
         "web"
       ],
       "addedDate": "2026-01-13",
-      "addedTs": 1768290375887,
+      "addedTs": 1768290821000,
       "oldClasses": [],
       "colors": [
         {
-          "value": "#000000",
+          "value": "#212121",
           "label": "default"
+        },
+        {
+          "value": "rgba(255, 255, 255, 0.87)",
+          "label": "darkMode"
         }
       ],
       "keywords": [
@@ -32,14 +69,131 @@
       "category": "interface"
     },
     {
+      "name": "circle-pencil-filled",
+      "file": "circle-pencil-filled.svg",
+      "svgPath": "icons/circle-pencil-filled.svg",
+      "platforms": [
+        "android",
+        "ios"
+      ],
+      "addedDate": "2026-01-13",
+      "addedTs": 1768290821000,
+      "oldClasses": [],
+      "colors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "pencil",
+        "edit",
+        "change",
+        "modify"
+      ],
+      "note": null,
+      "category": "account and payments"
+    },
+    {
+      "name": "forward",
+      "file": "forward.svg",
+      "svgPath": "icons/forward.svg",
+      "platforms": [
+        "android",
+        "ios"
+      ],
+      "addedDate": "2026-01-13",
+      "addedTs": 1768290821000,
+      "oldClasses": [],
+      "colors": [
+        {
+          "value": "#FFFFFF",
+          "label": "default"
+        }
+      ],
+      "keywords": [
+        "forward",
+        "share",
+        "music",
+        "video",
+        "audio"
+      ],
+      "note": null,
+      "category": "video"
+    },
+    {
+      "name": "gamepad",
+      "file": "gamepad.svg",
+      "svgPath": "icons/gamepad.svg",
+      "platforms": [
+        "android",
+        "ios"
+      ],
+      "addedDate": "2026-01-13",
+      "addedTs": 1768290821000,
+      "oldClasses": [],
+      "colors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "games",
+        "joy stick",
+        "controller",
+        "play",
+        "gaming",
+        "console",
+        "video game"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "maximize",
+      "file": "maximize.svg",
+      "svgPath": "icons/maximize.svg",
+      "platforms": [
+        "android",
+        "ios"
+      ],
+      "addedDate": "2026-01-13",
+      "addedTs": 1768290821000,
+      "oldClasses": [],
+      "colors": [
+        {
+          "value": "#FFFFFF",
+          "label": "default"
+        }
+      ],
+      "keywords": [
+        "maximize",
+        "fullscreen",
+        "music",
+        "video",
+        "audio"
+      ],
+      "note": null,
+      "category": "video"
+    },
+    {
       "name": "menu-grip",
       "file": "menu-grip.svg",
       "svgPath": "icons/menu-grip.svg",
       "platforms": [
         "tv"
       ],
-      "addedDate": "2026-01-01",
-      "addedTs": 1767249729568,
+      "addedDate": "2026-01-13",
+      "addedTs": 1768290821000,
       "oldClasses": [],
       "colors": [
         {
@@ -56,6 +210,33 @@
       "category": "video"
     },
     {
+      "name": "minimize",
+      "file": "minimize.svg",
+      "svgPath": "icons/minimize.svg",
+      "platforms": [
+        "android",
+        "ios"
+      ],
+      "addedDate": "2026-01-13",
+      "addedTs": 1768290821000,
+      "oldClasses": [],
+      "colors": [
+        {
+          "value": "#FFFFFF",
+          "label": "default"
+        }
+      ],
+      "keywords": [
+        "minimize",
+        "fullscreen",
+        "music",
+        "video",
+        "audio"
+      ],
+      "note": null,
+      "category": "video"
+    },
+    {
       "name": "play-next",
       "file": "play-next.svg",
       "svgPath": "icons/play-next.svg",
@@ -63,8 +244,8 @@
         "android",
         "ios"
       ],
-      "addedDate": "2026-01-01",
-      "addedTs": 1767249729568,
+      "addedDate": "2026-01-13",
+      "addedTs": 1768290821000,
       "oldClasses": [],
       "colors": [
         {
@@ -83,6 +264,34 @@
       "category": "video"
     },
     {
+      "name": "play-previous",
+      "file": "play-previous.svg",
+      "svgPath": "icons/play-previous.svg",
+      "platforms": [
+        "android",
+        "ios"
+      ],
+      "addedDate": "2026-01-13",
+      "addedTs": 1768290821000,
+      "oldClasses": [],
+      "colors": [
+        {
+          "value": "#FFFFFF",
+          "label": "default"
+        }
+      ],
+      "keywords": [
+        "previous",
+        "play",
+        "music",
+        "video",
+        "audio",
+        "back"
+      ],
+      "note": null,
+      "category": "video"
+    },
+    {
       "name": "quotes",
       "file": "quotes.svg",
       "svgPath": "icons/quotes.svg",
@@ -90,8 +299,8 @@
         "android",
         "ios"
       ],
-      "addedDate": "2026-01-01",
-      "addedTs": 1767249729568,
+      "addedDate": "2026-01-13",
+      "addedTs": 1768290821000,
       "oldClasses": [],
       "colors": [
         {
@@ -112,6 +321,36 @@
       "category": "interface"
     },
     {
+      "name": "settings",
+      "file": "settings.svg",
+      "svgPath": "icons/settings.svg",
+      "platforms": [
+        "android",
+        "ios"
+      ],
+      "addedDate": "2026-01-13",
+      "addedTs": 1768290821000,
+      "oldClasses": [],
+      "colors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "gear",
+        "settings",
+        "change",
+        "modify"
+      ],
+      "note": null,
+      "category": "account and payments"
+    },
+    {
       "name": "square-question-mark",
       "file": "square-question-mark.svg",
       "svgPath": "icons/square-question-mark.svg",
@@ -119,8 +358,8 @@
         "android",
         "ios"
       ],
-      "addedDate": "2026-01-01",
-      "addedTs": 1767249729568,
+      "addedDate": "2026-01-13",
+      "addedTs": 1768290821000,
       "oldClasses": [],
       "colors": [
         {
@@ -142,6 +381,39 @@
       "category": "interface"
     },
     {
+      "name": "star-outline",
+      "file": "star-outline.svg",
+      "svgPath": "icons/star-outline.svg",
+      "platforms": [
+        "android",
+        "ios"
+      ],
+      "addedDate": "2026-01-13",
+      "addedTs": 1768290821000,
+      "oldClasses": [],
+      "colors": [
+        {
+          "value": "#464646",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "star",
+        "bookmark",
+        "premium",
+        "plus",
+        "favorite",
+        "review",
+        "rating"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
       "name": "stumps-play",
       "file": "stumps-play.svg",
       "svgPath": "icons/stumps-play.svg",
@@ -149,8 +421,8 @@
         "android",
         "ios"
       ],
-      "addedDate": "2026-01-01",
-      "addedTs": 1767249729568,
+      "addedDate": "2026-01-13",
+      "addedTs": 1768290821000,
       "oldClasses": [],
       "colors": [
         {
@@ -178,8 +450,8 @@
       "platforms": [
         "tv"
       ],
-      "addedDate": "2026-01-01",
-      "addedTs": 1767249729568,
+      "addedDate": "2026-01-13",
+      "addedTs": 1768290821000,
       "oldClasses": [],
       "colors": [
         {
@@ -194,241 +466,6 @@
       ],
       "note": null,
       "category": "interface"
-    },
-    {
-      "name": "forward",
-      "file": "forward.svg",
-      "svgPath": "icons/forward.svg",
-      "platforms": [
-        "android",
-        "ios"
-      ],
-      "addedDate": "2026-01-01",
-      "addedTs": 1767249729567,
-      "oldClasses": [],
-      "colors": [
-        {
-          "value": "#FFFFFF",
-          "label": "default"
-        }
-      ],
-      "keywords": [
-        "forward",
-        "share",
-        "music",
-        "video",
-        "audio"
-      ],
-      "note": null,
-      "category": "video"
-    },
-    {
-      "name": "maximize",
-      "file": "maximize.svg",
-      "svgPath": "icons/maximize.svg",
-      "platforms": [
-        "android",
-        "ios"
-      ],
-      "addedDate": "2026-01-01",
-      "addedTs": 1767249729567,
-      "oldClasses": [],
-      "colors": [
-        {
-          "value": "#FFFFFF",
-          "label": "default"
-        }
-      ],
-      "keywords": [
-        "maximize",
-        "fullscreen",
-        "music",
-        "video",
-        "audio"
-      ],
-      "note": null,
-      "category": "video"
-    },
-    {
-      "name": "minimize",
-      "file": "minimize.svg",
-      "svgPath": "icons/minimize.svg",
-      "platforms": [
-        "android",
-        "ios"
-      ],
-      "addedDate": "2026-01-01",
-      "addedTs": 1767249729567,
-      "oldClasses": [],
-      "colors": [
-        {
-          "value": "#FFFFFF",
-          "label": "default"
-        }
-      ],
-      "keywords": [
-        "minimize",
-        "fullscreen",
-        "music",
-        "video",
-        "audio"
-      ],
-      "note": null,
-      "category": "video"
-    },
-    {
-      "name": "play-previous",
-      "file": "play-previous.svg",
-      "svgPath": "icons/play-previous.svg",
-      "platforms": [
-        "android",
-        "ios"
-      ],
-      "addedDate": "2026-01-01",
-      "addedTs": 1767249729567,
-      "oldClasses": [],
-      "colors": [
-        {
-          "value": "#FFFFFF",
-          "label": "default"
-        }
-      ],
-      "keywords": [
-        "previous",
-        "play",
-        "music",
-        "video",
-        "audio",
-        "back"
-      ],
-      "note": null,
-      "category": "video"
-    },
-    {
-      "name": "gamepad",
-      "file": "gamepad.svg",
-      "svgPath": "icons/gamepad.svg",
-      "platforms": [
-        "android",
-        "ios"
-      ],
-      "addedDate": "2026-01-01",
-      "addedTs": 1767249729566,
-      "oldClasses": [],
-      "colors": [
-        {
-          "value": "#464646",
-          "label": "default"
-        },
-        {
-          "value": "#FFFFFF",
-          "label": "onDarkBgs"
-        }
-      ],
-      "keywords": [
-        "games",
-        "joy stick",
-        "controller",
-        "play",
-        "gaming",
-        "console",
-        "video game"
-      ],
-      "note": null,
-      "category": "interface"
-    },
-    {
-      "name": "star-outline",
-      "file": "star-outline.svg",
-      "svgPath": "icons/star-outline.svg",
-      "platforms": [
-        "android",
-        "ios"
-      ],
-      "addedDate": "2026-01-01",
-      "addedTs": 1767249729566,
-      "oldClasses": [],
-      "colors": [
-        {
-          "value": "#464646",
-          "label": "default"
-        },
-        {
-          "value": "#FFFFFF",
-          "label": "onDarkBgs"
-        }
-      ],
-      "keywords": [
-        "star",
-        "bookmark",
-        "premium",
-        "plus",
-        "favorite",
-        "review",
-        "rating"
-      ],
-      "note": null,
-      "category": "interface"
-    },
-    {
-      "name": "circle-pencil-filled",
-      "file": "circle-pencil-filled.svg",
-      "svgPath": "icons/circle-pencil-filled.svg",
-      "platforms": [
-        "android",
-        "ios"
-      ],
-      "addedDate": "2026-01-01",
-      "addedTs": 1767249729565,
-      "oldClasses": [],
-      "colors": [
-        {
-          "value": "#464646",
-          "label": "default"
-        },
-        {
-          "value": "#FFFFFF",
-          "label": "onDarkBgs"
-        }
-      ],
-      "keywords": [
-        "pencil",
-        "edit",
-        "change",
-        "modify"
-      ],
-      "note": null,
-      "category": "account and payments"
-    },
-    {
-      "name": "settings",
-      "file": "settings.svg",
-      "svgPath": "icons/settings.svg",
-      "platforms": [
-        "android",
-        "ios"
-      ],
-      "addedDate": "2026-01-01",
-      "addedTs": 1767249729565,
-      "oldClasses": [],
-      "colors": [
-        {
-          "value": "#464646",
-          "label": "default"
-        },
-        {
-          "value": "#FFFFFF",
-          "label": "onDarkBgs"
-        }
-      ],
-      "keywords": [
-        "gear",
-        "settings",
-        "change",
-        "modify"
-      ],
-      "note": null,
-      "category": "account and payments"
     },
     {
       "name": "android-logo",
