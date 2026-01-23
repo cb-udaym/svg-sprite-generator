@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-01-23T08:18:35.809Z",
+  "generatedAt": "2026-01-23T08:24:14.550Z",
   "inputDir": "icons",
   "spritePath": "sprite/sprite.svg",
   "icons": [
@@ -8,15 +8,31 @@
       "file": "cb-mini-icon.svg",
       "svgPath": "icons/cb-mini-icon.svg",
       "platforms": [
-        "default"
+        "android",
+        "ios",
+        "web"
       ],
       "addedDate": "2026-01-23",
-      "addedTs": 1769156096511,
+      "addedTs": 1769156372000,
       "oldClasses": [],
-      "colors": [],
-      "keywords": [],
+      "colors": [
+        {
+          "value": "rgba(0, 0, 0, 0.54)",
+          "label": "default"
+        },
+        {
+          "value": "#FFFFFF",
+          "label": "onDarkBgs"
+        }
+      ],
+      "keywords": [
+        "logo",
+        "cb",
+        "cricbuzz",
+        "icon"
+      ],
       "note": null,
-      "category": null
+      "category": "logo"
     },
     {
       "name": "hourglass-half-filled",
