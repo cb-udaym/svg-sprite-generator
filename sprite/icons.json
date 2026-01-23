@@ -1,8 +1,23 @@
 {
-  "generatedAt": "2026-01-13T08:55:49.726Z",
+  "generatedAt": "2026-01-23T08:18:35.809Z",
   "inputDir": "icons",
   "spritePath": "sprite/sprite.svg",
   "icons": [
+    {
+      "name": "cb-mini-icon",
+      "file": "cb-mini-icon.svg",
+      "svgPath": "icons/cb-mini-icon.svg",
+      "platforms": [
+        "default"
+      ],
+      "addedDate": "2026-01-23",
+      "addedTs": 1769156096511,
+      "oldClasses": [],
+      "colors": [],
+      "keywords": [],
+      "note": null,
+      "category": null
+    },
     {
       "name": "hourglass-half-filled",
       "file": "hourglass-half-filled.svg",
@@ -13,7 +28,7 @@
         "web"
       ],
       "addedDate": "2026-01-13",
-      "addedTs": 1768294185096,
+      "addedTs": 1768294685000,
       "oldClasses": [],
       "colors": [
         {

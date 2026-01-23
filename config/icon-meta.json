@@ -865,5 +865,11 @@
         "keywords": ["hourglass", "time", "waiting", "loading", "empty state", "error"],
         "category": "interface",
         "platforms": ["android", "ios", "web"]
+    },
+    "cb-mini-icon.svg": {
+        "colors": [{ "value": "rgba(0, 0, 0, 0.54)", "label": "default" }, { "value": "#FFFFFF", "label": "onDarkBgs" }],
+        "keywords": ["logo", "cb", "cricbuzz", "icon"],
+        "category": "logo",
+        "platforms": ["android", "ios", "web"]
     }
 }
