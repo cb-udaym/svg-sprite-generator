@@ -1,8 +1,87 @@
 {
-  "generatedAt": "2026-03-17T14:22:12.592Z",
+  "generatedAt": "2026-03-17T14:30:06.756Z",
   "inputDir": "icons",
   "spritePath": "sprite/sprite.svg",
   "icons": [
+    {
+      "name": "airplay",
+      "file": "airplay.svg",
+      "svgPath": "icons/airplay.svg",
+      "platforms": [
+        "ios"
+      ],
+      "addedDate": "2026-03-17",
+      "addedTs": 1773757474000,
+      "oldClasses": [],
+      "colors": [],
+      "keywords": [
+        "airplay",
+        "cast",
+        "stream",
+        "tv"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "ballot",
+      "file": "ballot.svg",
+      "svgPath": "icons/ballot.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
+      "addedDate": "2026-03-17",
+      "addedTs": 1773757474000,
+      "oldClasses": [],
+      "colors": [],
+      "keywords": [
+        "ballot",
+        "vote",
+        "election",
+        "poll"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "bell-filled",
+      "file": "bell-filled.svg",
+      "svgPath": "icons/bell-filled.svg",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ],
+      "addedDate": "2026-03-17",
+      "addedTs": 1773757474000,
+      "oldClasses": [],
+      "colors": [],
+      "keywords": [
+        "notification",
+        "reminder",
+        "alert",
+        "bell"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "bell-outlined",
+      "file": "bell-outlined.svg",
+      "svgPath": "icons/bell-outlined.svg",
+      "platforms": [
+        "default"
+      ],
+      "addedDate": "2026-03-17",
+      "addedTs": 1773757474000,
+      "oldClasses": [],
+      "colors": [],
+      "keywords": [],
+      "note": null,
+      "category": null
+    },
     {
       "name": "bulb-signal",
       "file": "bulb-signal.svg",
@@ -13,7 +92,7 @@
         "web"
       ],
       "addedDate": "2026-03-17",
-      "addedTs": 1773757136163,
+      "addedTs": 1773757474000,
       "oldClasses": [],
       "colors": [],
       "keywords": [
@@ -35,7 +114,7 @@
         "ios"
       ],
       "addedDate": "2026-03-17",
-      "addedTs": 1773757136163,
+      "addedTs": 1773757474000,
       "oldClasses": [],
       "colors": [],
       "keywords": [
@@ -57,7 +136,7 @@
         "ios"
       ],
       "addedDate": "2026-03-17",
-      "addedTs": 1773757136163,
+      "addedTs": 1773757474000,
       "oldClasses": [],
       "colors": [],
       "keywords": [
@@ -71,51 +150,6 @@
       "category": "interface"
     },
     {
-      "name": "reel-flash",
-      "file": "reel-flash.svg",
-      "svgPath": "icons/reel-flash.svg",
-      "platforms": [
-        "android",
-        "ios",
-        "web"
-      ],
-      "addedDate": "2026-03-17",
-      "addedTs": 1773757136163,
-      "oldClasses": [],
-      "colors": [],
-      "keywords": [
-        "reel",
-        "flash",
-        "shorts",
-        "video",
-        "buzz"
-      ],
-      "note": null,
-      "category": "interface"
-    },
-    {
-      "name": "ballot",
-      "file": "ballot.svg",
-      "svgPath": "icons/ballot.svg",
-      "platforms": [
-        "android",
-        "ios",
-        "web"
-      ],
-      "addedDate": "2026-03-17",
-      "addedTs": 1773757136162,
-      "oldClasses": [],
-      "colors": [],
-      "keywords": [
-        "ballot",
-        "vote",
-        "election",
-        "poll"
-      ],
-      "note": null,
-      "category": "interface"
-    },
-    {
       "name": "chrome-cast",
       "file": "chrome-cast.svg",
       "svgPath": "icons/chrome-cast.svg",
@@ -124,7 +158,7 @@
         "ios"
       ],
       "addedDate": "2026-03-17",
-      "addedTs": 1773757136162,
+      "addedTs": 1773757474000,
       "oldClasses": [],
       "colors": [],
       "keywords": [
@@ -137,6 +171,51 @@
       "category": "interface"
     },
     {
+      "name": "closed-caption-filled",
+      "file": "closed-caption-filled.svg",
+      "svgPath": "icons/closed-caption-filled.svg",
+      "platforms": [
+        "default"
+      ],
+      "addedDate": "2026-03-17",
+      "addedTs": 1773757474000,
+      "oldClasses": [],
+      "colors": [],
+      "keywords": [],
+      "note": null,
+      "category": null
+    },
+    {
+      "name": "closed-caption-outline",
+      "file": "closed-caption-outline.svg",
+      "svgPath": "icons/closed-caption-outline.svg",
+      "platforms": [
+        "default"
+      ],
+      "addedDate": "2026-03-17",
+      "addedTs": 1773757474000,
+      "oldClasses": [],
+      "colors": [],
+      "keywords": [],
+      "note": null,
+      "category": null
+    },
+    {
+      "name": "copyright",
+      "file": "copyright.svg",
+      "svgPath": "icons/copyright.svg",
+      "platforms": [
+        "default"
+      ],
+      "addedDate": "2026-03-17",
+      "addedTs": 1773757474000,
+      "oldClasses": [],
+      "colors": [],
+      "keywords": [],
+      "note": null,
+      "category": null
+    },
+    {
       "name": "dashboard",
       "file": "dashboard.svg",
       "svgPath": "icons/dashboard.svg",
@@ -146,7 +225,7 @@
         "web"
       ],
       "addedDate": "2026-03-17",
-      "addedTs": 1773757136162,
+      "addedTs": 1773757474000,
       "oldClasses": [],
       "colors": [],
       "keywords": [
@@ -161,6 +240,36 @@
       "category": "interface"
     },
     {
+      "name": "ellipsis",
+      "file": "ellipsis.svg",
+      "svgPath": "icons/ellipsis.svg",
+      "platforms": [
+        "default"
+      ],
+      "addedDate": "2026-03-17",
+      "addedTs": 1773757474000,
+      "oldClasses": [],
+      "colors": [],
+      "keywords": [],
+      "note": null,
+      "category": null
+    },
+    {
+      "name": "emoticon-party",
+      "file": "emoticon-party.svg",
+      "svgPath": "icons/emoticon-party.svg",
+      "platforms": [
+        "default"
+      ],
+      "addedDate": "2026-03-17",
+      "addedTs": 1773757474000,
+      "oldClasses": [],
+      "colors": [],
+      "keywords": [],
+      "note": null,
+      "category": null
+    },
+    {
       "name": "eye-open",
       "file": "eye-open.svg",
       "svgPath": "icons/eye-open.svg",
@@ -170,7 +279,7 @@
         "web"
       ],
       "addedDate": "2026-03-17",
-      "addedTs": 1773757136162,
+      "addedTs": 1773757474000,
       "oldClasses": [],
       "colors": [],
       "keywords": [
@@ -191,7 +300,7 @@
         "default"
       ],
       "addedDate": "2026-03-17",
-      "addedTs": 1773757136162,
+      "addedTs": 1773757474000,
       "oldClasses": [],
       "colors": [],
       "keywords": [],
@@ -208,7 +317,7 @@
         "web"
       ],
       "addedDate": "2026-03-17",
-      "addedTs": 1773757136162,
+      "addedTs": 1773757474000,
       "oldClasses": [],
       "colors": [],
       "keywords": [
@@ -221,6 +330,21 @@
       "category": "interface"
     },
     {
+      "name": "laptop-mobile",
+      "file": "laptop-mobile.svg",
+      "svgPath": "icons/laptop-mobile.svg",
+      "platforms": [
+        "default"
+      ],
+      "addedDate": "2026-03-17",
+      "addedTs": 1773757474000,
+      "oldClasses": [],
+      "colors": [],
+      "keywords": [],
+      "note": null,
+      "category": null
+    },
+    {
       "name": "pin",
       "file": "pin.svg",
       "svgPath": "icons/pin.svg",
@@ -230,7 +354,7 @@
         "web"
       ],
       "addedDate": "2026-03-17",
-      "addedTs": 1773757136162,
+      "addedTs": 1773757474000,
       "oldClasses": [],
       "colors": [],
       "keywords": [
@@ -238,6 +362,28 @@
         "location",
         "place",
         "map"
+      ],
+      "note": null,
+      "category": "interface"
+    },
+    {
+      "name": "reel-flash",
+      "file": "reel-flash.svg",
+      "svgPath": "icons/reel-flash.svg",
+      "platforms": [
+        "android",
+        "ios"
+      ],
+      "addedDate": "2026-03-17",
+      "addedTs": 1773757474000,
+      "oldClasses": [],
+      "colors": [],
+      "keywords": [
+        "reel",
+        "flash",
+        "shorts",
+        "video",
+        "buzz"
       ],
       "note": null,
       "category": "interface"
@@ -252,7 +398,7 @@
         "web"
       ],
       "addedDate": "2026-03-17",
-      "addedTs": 1773757136162,
+      "addedTs": 1773757474000,
       "oldClasses": [],
       "colors": [],
       "keywords": [
@@ -265,108 +411,6 @@
       "category": "interface"
     },
     {
-      "name": "airplay",
-      "file": "airplay.svg",
-      "svgPath": "icons/airplay.svg",
-      "platforms": [
-        "ios"
-      ],
-      "addedDate": "2026-03-17",
-      "addedTs": 1773757136161,
-      "oldClasses": [],
-      "colors": [],
-      "keywords": [
-        "airplay",
-        "cast",
-        "stream",
-        "tv"
-      ],
-      "note": null,
-      "category": "interface"
-    },
-    {
-      "name": "bell-filled",
-      "file": "bell-filled.svg",
-      "svgPath": "icons/bell-filled.svg",
-      "platforms": [
-        "android",
-        "ios",
-        "web"
-      ],
-      "addedDate": "2026-03-17",
-      "addedTs": 1773757136161,
-      "oldClasses": [],
-      "colors": [],
-      "keywords": [
-        "notification",
-        "reminder",
-        "alert",
-        "bell"
-      ],
-      "note": null,
-      "category": "interface"
-    },
-    {
-      "name": "bell-outlined",
-      "file": "bell-outlined.svg",
-      "svgPath": "icons/bell-outlined.svg",
-      "platforms": [
-        "default"
-      ],
-      "addedDate": "2026-03-17",
-      "addedTs": 1773757136161,
-      "oldClasses": [],
-      "colors": [],
-      "keywords": [],
-      "note": null,
-      "category": null
-    },
-    {
-      "name": "ellipsis",
-      "file": "ellipsis.svg",
-      "svgPath": "icons/ellipsis.svg",
-      "platforms": [
-        "default"
-      ],
-      "addedDate": "2026-03-17",
-      "addedTs": 1773757136155,
-      "oldClasses": [],
-      "colors": [],
-      "keywords": [],
-      "note": null,
-      "category": null
-    },
-    {
-      "name": "closed-caption-filled",
-      "file": "closed-caption-filled.svg",
-      "svgPath": "icons/closed-caption-filled.svg",
-      "platforms": [
-        "default"
-      ],
-      "addedDate": "2026-03-17",
-      "addedTs": 1773757136154,
-      "oldClasses": [],
-      "colors": [],
-      "keywords": [],
-      "note": null,
-      "category": null
-    },
-    {
-      "name": "closed-caption-outline",
-      "file": "closed-caption-outline.svg",
-      "svgPath": "icons/closed-caption-outline.svg",
-      "platforms": [
-        "default"
-      ],
-      "addedDate": "2026-03-17",
-      "addedTs": 1773757136154,
-      "oldClasses": [],
-      "colors": [],
-      "keywords": [],
-      "note": null,
-      "category": null
-    },
-    {
       "name": "triangle-alert",
       "file": "triangle-alert.svg",
       "svgPath": "icons/triangle-alert.svg",
@@ -374,52 +418,7 @@
         "default"
       ],
       "addedDate": "2026-03-17",
-      "addedTs": 1773757136151,
-      "oldClasses": [],
-      "colors": [],
-      "keywords": [],
-      "note": null,
-      "category": null
-    },
-    {
-      "name": "emoticon-party",
-      "file": "emoticon-party.svg",
-      "svgPath": "icons/emoticon-party.svg",
-      "platforms": [
-        "default"
-      ],
-      "addedDate": "2026-03-17",
-      "addedTs": 1773757136148,
-      "oldClasses": [],
-      "colors": [],
-      "keywords": [],
-      "note": null,
-      "category": null
-    },
-    {
-      "name": "copyright",
-      "file": "copyright.svg",
-      "svgPath": "icons/copyright.svg",
-      "platforms": [
-        "default"
-      ],
-      "addedDate": "2026-03-17",
-      "addedTs": 1773757136147,
-      "oldClasses": [],
-      "colors": [],
-      "keywords": [],
-      "note": null,
-      "category": null
-    },
-    {
-      "name": "laptop-mobile",
-      "file": "laptop-mobile.svg",
-      "svgPath": "icons/laptop-mobile.svg",
-      "platforms": [
-        "default"
-      ],
-      "addedDate": "2026-03-17",
-      "addedTs": 1773757136145,
+      "addedTs": 1773757474000,
       "oldClasses": [],
       "colors": [],
       "keywords": [],

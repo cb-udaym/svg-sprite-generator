@@ -940,7 +940,7 @@
      "reel-flash": {
         "keywords": ["reel", "flash", "shorts", "video", "buzz"],
         "category": "interface",
-        "platforms": ["android", "ios", "web"]
+        "platforms": ["android", "ios"]
      },
      "bulb-signal": {
         "keywords": ["bulb", "signal", "forecast", "idea", "prediction"],
