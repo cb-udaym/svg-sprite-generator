@@ -875,12 +875,12 @@
     "bell-outline": {
         "keywords": ["notification", "reminder", "alert", "bell"],
         "category": "interface",
-        "platforms": ["android", "ios", "web"]
+        "platforms": ["android", "ios"]
     },
     "bell-filled": {
         "keywords": ["notification", "reminder", "alert", "bell"],
         "category": "interface",
-        "platforms": ["android", "ios", "web"]
+        "platforms": ["android", "ios"]
     },
     "airplay": {
         "keywords": ["airplay", "cast", "stream", "tv"],
@@ -905,7 +905,7 @@
     "pin": {
         "keywords": ["pin", "location", "place", "map"],
         "category": "interface",
-        "platforms": ["android", "ios", "web"]
+        "platforms": ["android", "ios"]
     },
     "graph-nodes": {
         "keywords": ["graph", "nodes", "network", "connections"],

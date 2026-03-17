@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-17T14:30:06.756Z",
+  "generatedAt": "2026-03-17T14:34:34.410Z",
   "inputDir": "icons",
   "spritePath": "sprite/sprite.svg",
   "icons": [
@@ -51,8 +51,7 @@
       "svgPath": "icons/bell-filled.svg",
       "platforms": [
         "android",
-        "ios",
-        "web"
+        "ios"
       ],
       "addedDate": "2026-03-17",
       "addedTs": 1773757474000,
@@ -66,21 +65,6 @@
       ],
       "note": null,
       "category": "interface"
-    },
-    {
-      "name": "bell-outlined",
-      "file": "bell-outlined.svg",
-      "svgPath": "icons/bell-outlined.svg",
-      "platforms": [
-        "default"
-      ],
-      "addedDate": "2026-03-17",
-      "addedTs": 1773757474000,
-      "oldClasses": [],
-      "colors": [],
-      "keywords": [],
-      "note": null,
-      "category": null
     },
     {
       "name": "bulb-signal",
@@ -350,8 +334,7 @@
       "svgPath": "icons/pin.svg",
       "platforms": [
         "android",
-        "ios",
-        "web"
+        "ios"
       ],
       "addedDate": "2026-03-17",
       "addedTs": 1773757474000,
@@ -424,6 +407,27 @@
       "keywords": [],
       "note": null,
       "category": null
+    },
+    {
+      "name": "bell-outline",
+      "file": "bell-outline.svg",
+      "svgPath": "icons/bell-outline.svg",
+      "platforms": [
+        "android",
+        "ios"
+      ],
+      "addedDate": "2026-03-17",
+      "addedTs": 1773757136161,
+      "oldClasses": [],
+      "colors": [],
+      "keywords": [
+        "notification",
+        "reminder",
+        "alert",
+        "bell"
+      ],
+      "note": null,
+      "category": "interface"
     },
     {
       "name": "cb-mini-icon",
