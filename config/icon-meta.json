@@ -871,5 +871,80 @@
         "keywords": ["logo", "cb", "cricbuzz", "icon"],
         "category": "logo",
         "platforms": ["android", "ios", "web"]
-    }
+    },
+    "bell-outline": {
+        "keywords": ["notification", "reminder", "alert", "bell"],
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
+    },
+    "bell-filled": {
+        "keywords": ["notification", "reminder", "alert", "bell"],
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
+    },
+    "airplay": {
+        "keywords": ["airplay", "cast", "stream", "tv"],
+        "category": "interface",
+        "platforms": ["ios"]
+    },
+    "chrome-cast": {
+        "keywords": ["chromecast", "cast", "stream", "tv"],
+        "category": "interface",
+        "platforms": ["android", "ios"]
+    },
+    "trending-up": {
+        "keywords": ["trending", "up", "graph", "ranking"],
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
+    },
+    "eye-open": {
+        "keywords": ["view", "show", "visible", "eye", "views"],
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
+    },
+    "pin": {
+        "keywords": ["pin", "location", "place", "map"],
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
+    },
+    "graph-nodes": {
+        "keywords": ["graph", "nodes", "network", "connections"],
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
+    },
+     "graph-lines": {
+        "keywords": ["graph", "trend", "stats", "analysis"],
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
+     },
+     "ballot": {
+        "keywords": ["ballot", "vote", "election", "poll"],
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
+     },
+     "dashboard": {
+        "keywords": ["dashboard", "analytics", "stats", "overview", "table", "points"],
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
+     },
+     "chevron-right-light": {
+        "keywords": ["chevron", "right", "arrow", "forward", "next"],
+        "category": "interface",
+        "platforms": ["android", "ios"]
+     },
+     "chevron-down-light": {
+        "keywords": ["chevron", "down", "arrow", "back", "previous"],
+        "category": "interface",
+        "platforms": ["android", "ios"]
+     },
+     "reel-flash": {
+        "keywords": ["reel", "flash", "shorts", "video", "buzz"],
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
+     },
+     "bulb-signal": {
+        "keywords": ["bulb", "signal", "forecast", "idea", "prediction"],
+        "category": "interface",
+        "platforms": ["android", "ios", "web"]
+     }
 }
